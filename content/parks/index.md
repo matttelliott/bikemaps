@@ -1,6 +1,6 @@
 ---
 title: "Austin Parks"
-date: 2017-07-30T00:00:00+00:00
+date: 2024-10-15:00:00+00:00
 images: ["images/IMG_8629.jpg"]
 seealso: []    # If single, can avoid the brackets
 draft: false
