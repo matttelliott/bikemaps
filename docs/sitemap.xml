@@ -2,14 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/bikemaps/parks/</loc>
+    <loc>https://matttelliott.com/bikemaps/parks/</loc>
     <lastmod>2017-07-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/bikemaps/</loc>
+    <loc>https://matttelliott.com/bikemaps/</loc>
     <lastmod>2017-07-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/bikemaps/categories/</loc>
+    <loc>https://matttelliott.com/bikemaps/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/bikemaps/tags/</loc>
+    <loc>https://matttelliott.com/bikemaps/tags/</loc>
   </url>
 </urlset>
