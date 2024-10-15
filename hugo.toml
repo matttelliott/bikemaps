@@ -1,0 +1,11 @@
+baseURL = 'https://matttelliott.com/bikemaps/'
+languageCode = 'en-us'
+title = 'Bike Maps'
+theme = 'hugo-split-gallery'
+cleanDestinationDir = true
+
+[params]
+  customCss = ["css/custom.css"]
+  customJs = ["js/custom.js"]
+
+footnote = "https://matttelliott.com"

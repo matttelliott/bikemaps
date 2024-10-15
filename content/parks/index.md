@@ -1,0 +1,391 @@
+---
+title: "Austin Parks"
+date: 2017-07-30T00:00:00+00:00
+images: ["images/IMG_8629.jpg"]
+seealso: []    # If single, can avoid the brackets
+draft: false
+---
+
+## On a quest to ride every park in Austin.
+
+[Parks Directory](https://www.austintexas.gov/page/park-directory)
+
+[Parks Map](https://www.google.com/maps/d/u/0/edit?mid=1HYXVpfPIN11s5E248iOtG0gRm6DUHMM&usp=sharing)
+
+- [ ] Ridgeline Neighborhood Park	2701 S Lakeline Blvd., Austin, Texas 78613
+- [ ] Dry Creek Greenbelt	6100 Constellation Cir., Austin, Texas 78617
+- [ ] Elroy Neighborhood Park	7527 Elroy Rd., Austin, Texas 78617
+- [ ] Old Moore's Crossing Neighborhood Park	7420 Apperson St., Austin, Texas 78617
+- [ ] Onion Creek Wildlife Sanctuary	4435 E SH 71, Austin, Texas 78617
+- [ ] Stoney Ridge Neighborhood Park	7000 Moores Crossing Blvd., Austin, Texas 78617
+- [ ] Old San Antonio District Park	12110 Old San Antonio Rd., Austin, Texas 78652
+- [ ] Wunneburger Neighborhood Park	11901 Old San Antonio Rd., Austin, Texas 78652
+- [ ] Bellingham Meadows Greenbelt	7601 E Parmer Ln., Austin, Texas 78653
+- [ ] Janet Long Fish Park at Harris Branch Greenbelt	13840 Dessau Rd., Austin, Texas 78660
+- [ ] Lakes at Techridge Greenbelt	14303 The Lakes Blvd., Austin, Texas 78660
+- [ ] Springbrook Park	1800 Picadilly Rd., Pflugerville, Texas 78664
+- [ ] Austin Recreation Center	1301 Shoal Creek Blvd., Austin, Texas 78701
+- [ ] Brush Square (O Henry Museum)	409 E 5th St., Austin, Texas 78701
+- [ ] Duncan Neighborhood Park	900 W 9th St., Austin, Texas 78701
+- [ ] Heath Eiland and Morgan Moss BMX Skate Park	1213 Shoal Creek Blvd., Austin, Texas 78701
+- [x] Margaret Hoffman Oak Park	315 W Cesar Chavez St., Austin, Texas 78701
+- [ ] Old Bakery and Emporium	1006 Congress Ave., Austin, Texas 78701
+- [ ] Republic Square	422 Guadalupe St., Austin, Texas 78701
+- [x] Roberta Crenshaw Overlook at Shoal Beach at Town Lake Metro Park	201 W Cesar Chavez St., Austin, Texas 78701
+- [x] Shoal Beach at Town Lake Metropolitan Park	707 W Cesar Chavez St., Austin, Texas 78701
+- [ ] Sir Swante Palm Neighborhood Park	200 N IH 35 Svrd SB, Austin, Texas 78701
+- [ ] Symphony Square	1101 Red River St., Austin, Texas 78701
+- [ ] The War Memorial	Colorado St. and W 11 St., Austin, Texas 78701
+- [x] Waller Beach at Town Lake Metropolitan Park	30 East Ave., Austin, Texas 78701
+- [ ] Waller Creek Greenbelt	703 E 6th St., Austin, Texas 78701
+- [ ] Waterloo Neighborhood Park	500 E 12th St., Austin, Texas 78701
+- [ ] Wooldridge Square	900 Guadalupe St., Austin, Texas 78701
+- [ ] Boggy Creek Greenbelt	1114 Nile St., Austin, Texas, 78702
+- [ ] Chestnut Pocket Park	2207 E 16th St., Austin, Texas 78702
+- [ ] College Row Pocket Park	1901 E. 11th St., Austin, Texas 78702
+- [x] Colorado River Wildlife Sanctuary	5827 Levander Loop, Austin, Texas 78702
+- [ ] Comal Pocket Park	300 Comal St., Austin, Texas 78702
+- [ ] Conley-Guerrero Senior Activity Center	808 Nile St., Austin, Texas 78702
+- [ ] Downs Mabson Fields	2816 E 12th St., Austin, Texas 78702
+- [x] Edward Rendon Sr. Metropolitan Park at Festival Beach	2101 Jesse E Segovia St., Austin, Texas 78702
+- [ ] George Washington Carver Museum	1161 Angelina St., Austin, Texas 78702
+- [ ] Guthrie Pocket Park	3424 Sellers St., Austin, Texas 78702
+- [x] Holly Shores at Town Lake Metropolitan Park	2711 Canterbury St., Austin, Texas 78702
+- [ ] Kealing School Park	1500 Rosewood Ave., Austin, Texas 78702
+- [ ] Lott Pocket Park	1180 Curve St., Austin, Texas 78702
+- [ ] MLK Station Neighborhood Park	2907 E Martin Luther King Jr Blvd., Austin, Texas 78702
+- [x] Manuel and Robert Donley Pocket Park	2301 Haskell St., Austin, Texas 78702
+- [x] Metz Neighborhood Park	2407 Canterbury St., Austin, Texas 78702
+- [ ] Millenium Center	1156 Hargrave St., Austin, Texas 78702
+- [ ] Oak Springs School Park	2806 Goodwin Ave., Austin, Texas 78702
+- [ ] Oakwood Annex Cemetery	1509 E MLK Jr Blvd., Austin, Texas 78702
+- [ ] Oakwood Cemetery	1012 E 16th St., Austin, Texas 78702
+- [ ] Pan American Neighborhood Park	307 Chicon St., Austin, Texas 78702
+- [ ] Parque Zaragoza Neighborhood Park	2608 Gonzales St., Austin, Texas 78702
+- [ ] Plaza Saltillo	1501 E 5th St., Austin, Texas 78702
+- [ ] Poquito Creek Greenbelt	1411 1/2 Poquito St., Austin, Texas 78702
+- [ ] Rosewood Neighborhood Park	2300 Rosewood Ave., Austin, Texas 78702
+- [ ] Sanchez School Park	64 Waller St., Austin, Texas 78702
+- [ ] Springdale Farms Greenbelt	735 Springdale Rd., Austin, Texas 78702
+- [ ] Swede Hill Pocket Park	907 E 14th St., Austin, Texas 78702
+- [x] Austin High Tennis Center	1717 W Cesar Chavez St., Austin, Texas 78703
+- [ ] Caldwell Treaty Oak Park	507 Baylor St., Austin, Texas 78703
+- [x] Eilers (Deep Eddy) Neighborhood Park	401 Deep Eddy Ave., Austin, Texas 78703
+- [ ] Harris Triangle	2409 Windsor Rd., Austin, Texas 78703
+- [ ] Hartford Planting Strip	2516 Hartford Rd., Austin, Texas 78703
+- [ ] Hartford Triangle	1605 Ethridge Ave., Austin, Texas 78703
+- [ ] Haskell House	1705 Waterston St., Austin, Texas 78703
+- [ ] Johnson Creek Greenbelt	2001 Enfield Rd., Austin, Texas 78703
+- [ ] Lions Municipal Golf Course	2901 Enfield Rd., Austin, Texas 78703
+- [ ] Mary Frances Baylor Clarksville Pocket Park	1811 W 11th St., Austin, Texas 78703
+- [ ] Mayfield Park	3805 W 35th St., Austin, Texas 78703
+- [ ] Palma Plaza Pocket Park	1524 Palma Plz., Austin, Texas 78703
+- [ ] Pease District Park	1100 Kingsbury St., Austin, Texas 78703
+- [ ] Reed Neighborhood Park	2614 Pecos St., Austin, Texas 78703
+- [ ] Tarrytown Neighborhood Park	2106 Tower Dr., Austin, Texas 78703
+- [x] Veterans Park	2200 Veterans Dr., Austin, Texas 78703
+- [w] Volma Overton,Sr. at Town Lake Metropolitan Park	1200 Cesar Chavez St., Austin, Texas 78703
+- [ ] Walsh Boat Landing	1600 Scenic Dr., Austin, Texas 78703
+- [ ] West Austin Neighborhood Park	1317 W 10th St., Austin, Texas 78703
+- [ ] Westenfield Neighborhood Park	2008 Enfield Rd., Austin, Texas 78703
+- [ ] Wood Street Settlement Button Park	702 Wood Street, Austin, Texas 78703
+- [ ] Auditorium Shores at Town Lake Metropolitan Park	800 W Riverside Dr., Austin, Texas 78704
+- [x] Barton Hills School Park	2009 Homedale Dr., Austin, Texas 78704
+- [x] Big Stacy Neighborhood Park	700 E Live Oak St., Austin, Texas 78704
+- [x] Blunn Creek Greenbelt	1901 East Side Dr., Austin, Texas 78704
+- [x] Blunn Creek Nature Preserve	1200 St. Edwards Dr., Austin, Texas 78704
+- [ ] Butler Pitch and Putt at Town Lake Metro Park	201 Lee Barton Dr., Austin, Texas 78704
+- [ ] Clawson Neighborhood Park	43701 Carson Rd., Austin, Texas, 778704
+- [ ] East Bouldin Creek Greenbelt	901 Bouldin Ave., Austin, Texas 78704
+- [x] Gillis Neighborhood Park	2410 Durwood Ave., Austin, Texas 78704
+- [x] Harpers Branch Creek Greenbelt	1405 Kenwood Ave., Austin, Texas 78704
+- [ ] James Pfluger Pedestrian Bridge	1300 W Riverside Dr., Austin, Texas 78704
+- [x] Kinney Oaks Pocket Park	2750 Kinney Oaks Cr., Austin, Texas 78704
+- [x] Little Stacy Neighborhood Park	1500 Alameda Dr., Austin, Texas 78704
+- [x] Little Zilker Neighborhood Park	2016 Bluebonnet Ln., Austin, Texas 78704
+- [ ] Mary Dawson Pocket Park	650 Dawson Rd., Austin, Texas 78704
+- [ ] Michael Butler Park at Town Lake Metro Park	1000 Barton Springs Rd. Austin, Texas 78704
+- [ ] Michael Butler Shores at Town Lake Metro Park	200 S Lamar Blvd., Austin, Texas, 78704
+- [ ] Nicholas Dawson Neighborhood Park	704 W James St., Austin, Texas 78704
+- [x] Norwood Tract at Town Lake Metropolitan Park	1009 Edgecliff Ter., Austin, Texas 78704
+- [x] Ricky Guerrero Neighborhood Park	2006 S 6th St., Austin, Texas 78704
+- [x] South Austin Island	2205 S Congress Ave., Austin, Texas 78704
+- [x] South Austin Neighborhood Park	1100 Cumberland Rd., Austin, Texas 78704
+- [x] South Austin Senior Activity Center	3911 Menchaca Rd., Austin, Texas 78704
+- [x] South Austin Tennis Center	1000 Cumberland Rd., Austin, Texas 78704
+- [x] The Circle Greenbelt	1300 The Circle, Austin, Texas 78704
+- [x] Tom Lasseter-South Lamar Neighborhood Park	3000 Del Curto Rd., Austin, Texas 78704
+- [ ] Umlauf Sculpture Garden	605 Robert E Lee Rd., Austin, Texas 78704
+- [ ] Union Pacific Greenbelt	1401 S. Lamar, Austin, Texas 78704
+- [ ] Vic Mathias Shores at Town Lake Metropolitan Park	700 W Riverside Dr., Austin, Texas 78704
+- [ ] West Bouldin Creek Greenbelt	1200 S 6th St., Austin, Texas 78704
+- [ ] Adams-Hemphill Neighborhood Park	201 W 30th St., Austin, Texas 78705
+- [ ] Bailey Neighborhood Park	1101 W 33rd St., Austin, Texas 78705
+- [ ] Caswell Tennis Center	2312 Shoal Creek Blvd., Austin, Texas 78705
+- [ ] Eastwoods Neighborhood Park	3001 Harris Park Ave., Austin, Texas 78705
+- [ ] Lamar Senior Activity Center	2874 Shoal Crest Ave., Austin, Texas 78705
+- [ ] Renaissance Market	2300 Blk of Guadalupe St., Austin, Texas 78705
+- [ ] Shoal Creek Greenbelt	2600 N Lamar Blvd., Austin, Texas 78705
+- [ ] Sparky Pocket Park	3701 Grooms St., Austin, Texas 78705
+- [ ] Brushy Creek Greenbelt	16533 Along Creek Cv. Austin, Texas 78717
+- [ ] Davis Spring Special Park	9819 Neenah Ave., Austin, Texas 78717
+- [ ] Lakeline Greenbelt	9833 Northlake Creek Pkwy, Austin, Texas 78717
+- [ ] Pearson Ranch Pocket Park	9407 Spectrum Drive, Austin, Texas 78717
+- [ ] Astor Place Greenbelt	1716 Astor Pl., Austin, Texas 78721
+- [ ] Bethany Greenbelt	1401 Waldorlf Ave., Austin, Texas 78721
+- [ ] East Boggy Creek Greenbelt	5609 Stuart Cir., Austin, Texas 78721
+- [ ] Evergreen Cemetery	3300 E 12th St., Austin, Texas 78721
+- [ ] Fort Branch Creek Greenbelt	1143 Lott Ave., Austin, Texas 78721
+- [ ] Givens District Park	3811 E 12th St., Austin, Texas 78721
+- [ ] Govalle Neighborhood Park	5200 Bolm Rd., Austin, Texas 78721
+- [ ] Norman-Sims School Park	3901 Tannehill Ln., Austin, Texas 78721
+- [ ] Ortega School Park	5308 Chico St., Austin, Texas 78721
+- [ ] Plummers Cemetery	1150 Blk of Springdale Rd., Austin, Texas 78721
+- [ ] Red Bluff Nature Preserve	5607 Harold Ct., Austin, Texas 78721
+- [ ] Red Bluff Neighborhood Park	5805 Harold Ct., Austin, Texas 78721
+- [ ] Southern Pacific Greenbelt	1136 Shady Lane, Austin, Texas 78721
+- [ ] Springdale Neighborhood Park	1175 Nickols Ave., Austin, Texas 78721
+- [ ] Superstar Button Park	5306 Chico St. Austin, Texas 78721
+- [ ] Alamo Pocket Park	2100 Alamo St., Austin, Texas 78722
+- [ ] Burnett "Blondie" Pharr Tennis Center	4201 Brookview Rd. Austin, Texas 78722
+- [ ] Cherrywood Pocket Park	1600 E 34th St., Austin, Texas 78722
+- [ ] Grackle Green Pocket Park	2700 Drury Ln., Austin, Texas 78722
+- [ ] Patterson Neighborhood Park	4200 Brookview Rd., Austin, Texas 78722
+- [ ] Redline Trail Greenbelt	2900 Manor Rd., Austin, Texas 78722
+- [ ] Andrews School Park	2303 Loyola Ln., Austin, Texas 78723
+- [ ] Bartholomew District Park	5201 Berkman Dr., Austin, Texas 78723
+- [ ] Cameron Pocket Park	5900 Cameron Rd., Austin, Texas 78723
+- [ ] Dottie Jordan Neighborhood Park	2803 Loyola Ln., Austin, Texas 78723
+- [ ] Earl J. Pomerleau Pocket Park	1906 Patton Ln., Austin, Texas 78723
+- [ ] J.J. Seabrook Greenbelt	2000 Pershing Dr., Austin, Texas 78723
+- [x] Little Walnut Creek Greenbelt	6201 Springdale Rd., Austin, Texas 78723
+- [ ] Morris Williams Golf Course	3851 Manor Rd., Austin, Texas 78723
+- [ ] Pecan Springs School Park	3312 Rogge Ln., Austin, Texas 78723
+- [x] Schieffer Tract	3404 Hycreek Dr., Austin, Texas 78723
+- [ ] Tannehill Branch Greenbelt	2403 E 51st St., Austin, Texas 78723
+- [ ] Agave Neighborhood Park	5900 Sendero Hills Parkway
+- [ ] Big Walnut Creek Nature Preserve	9221 E US 290 Hwy EB, Austin, Texas 78724
+- [ ] Colony Park District Park	7201 Colony Loop Dr., Austin, Texas 78724
+- [ ] Davis/White Northeast Neighborhood Park	6705 Crystalbrook Dr., Austin, Texas 78724
+- [ ] Decker Tallgrass Prairie Preserve	8001 Decker Ln., Austin, Texas 78724
+- [ ] Elm Creek Greenbelt	8707 HOg Eye Rd., Austin, Texas 78724
+- [ ] Lake Walter E. Long Metropolitan Park	6620 Blue Bluff Rd., Austin, Texas 78724
+- [ ] Lazy Creek Greenbelt	5601 Millrace Drive, Austin, Texas 78724
+- [ ] Louis René Barrera Indiangrass Wildlife Sanctuary	9138 Blue Bluff Rd., Austin, Texas 78724
+- [ ] Southern Walnut Creek Greenbelt	6013 Loyola Ln, Austin, Texas 78724
+- [ ] Walnut Creek Sports Park	7800 Johnny Morris Rd., Austin, Texas 78724
+- [ ] Walter E. Long Metropolitan Park	6620 Blue Bluff Rd., Austin, Texas 78724
+- [ ] Austin's Colony Neighborhood Park	14501 Lippincott St. Austin, Texas 78725
+- [ ] Bolm District Park	6700 Bolm Rd., Austin, Texas 78725
+- [ ] Colorado River Greenbelt	7503 Shelton Rd., Austin, Texas 78725
+- [ ] Colorado/Walnut Greenbelt	8001 Delwau Ln., Austin, Texas 78725
+- [ ] John Trevino Jr. Metropolitan Park at Morrison Ranch	9501 FM 969 Rd., Austin, Texas 78725
+- [ ] Trailhead Neighborhood Park	10984 Boulder Ln., Austin, Texas 78726
+- [ ] Riata Neighborhood Park	12401 Riata Trace Pkwy., Austin, Texas 78727
+- [ ] Scofield Farms Neighborhood Park	12901 Scofield Farms Dr., Austin, Texas 78727
+- [ ] Silver Creek Pocket Park	13007 Silver Creek Dr., Austin, Texas 78727
+- [ ] Wells Creek Greenbelt	13120 Metric Blvd., Austin, Texas 78727
+- [ ] Yett Creek Neighborhood Park	12538 Riata Vista Cir., Austin, Texas 78727
+- [ ] Forest North Neighborhood Park	13320 Lyndhurst St., Austin, Texas 78729
+- [ ] Springwoods Neighborhood Park	9117 Anderson Mill Rd., Austin, Texas 78729
+- [ ] Emma Long Metropolitan Park	1600 City Park Rd., Austin, Texas 78730
+- [ ] Austin Memorial Park Cemetery	3000 Hancock Dr., Austin, Texas 78731
+- [x] Barrow Nature Preserve	7515 Step Down Cv., Austin, Texas 78731
+- [ ] Bull Creek District Park	6701 Lakewood Dr., Austin, Texas 78731
+- [ ] Bull Creek Bluff Neighborhood Park	6309 Spicewood Springs, Austin, Texas 78731
+- [ ] Covert Park at Mount Bonnell	3800 Mount Bonnell Rd., Austin, Texas 78731
+- [ ] Doss School Park	7013 Northledge Dr., Austin, Texas 78731
+- [ ] Gregg Hill Park at Shoal Creek Greenbelt	4105 Jefferson St., Austin, Texas 78731
+- [ ] Lower Bull Creek Greenbelt	7806 N Capital of Texas Hwy., Austin, Texas 78731
+- [ ] Murchison Pool	7022 Hart Ln., Austin, Texas 78731
+- [ ] North Cat Mountain Greenbelt	6801 Cat Creek Trl., Austin, Texas 78731
+- [ ] Northwest Recreation Center	2913 Northland Dr., Austin, Texas 78731
+- [ ] Perry Neighborhood Park	4800 Fairview Dr., Austin, Texas 78731
+- [ ] Ridge Oak Triangle	4621 Lake View, Austin, Texas 78731
+- [ ] Seiders Springs at Shoal Creek Greenbelt	1380 W 34th St., Austin, Texas 78731
+- [ ] Shinoak Valley Greenbelt	3900 Dry Creek Dr., Austin, Texas 78731
+- [ ] Stillhouse Hollow Nature Preserve	7810 Sterling Dr., Austin, Texas 78731
+- [ ] Commons Ford Ranch Metropolitan Park	614 N Commons Ford Rd., Austin, Texas 78733
+- [ ] Gaines Creek Neighborhood Park	4801 Republic of Texas Blvd., Austin, Texas 78735
+- [ ] Gaines Greenbelt	4800 S Mopac Expy., Austin, Texas 78735
+- [ ] Harper Neighborhood Park	5280 Harper Park Dr., Austin, Texas 78735
+- [ ] Lantana Neighborhood Park	7206 Rialto Blvd., Austin, Texas 78735
+- [ ] Oakhill Neighborhood Park	5408 Southwest Pkwy., Austin, Texas 78735
+- [ ] Rialto Neighborhood Park	7025 Rialto Blvd., Austin, Texas 78735
+- [ ] Vega Pocket Park	5313 Vega Ave., Ausitn, Texas 78735
+- [ ] Williamson Creek Greenbelt West at Lantana	7259 Rialto Blvd., Austin, Texas 78735
+- [ ] Moccasin Neighborhood Park	6700 Halesboro Dr., Austin, Texas 78736
+- [ ] Scenic Brook Pocket Park	7300 Oak Meadow Drive, Austin, Texas 78736
+- [ ] Lewis Mountain Ranch Neighborhood Park	8206 Lewis Mountain Dr., Austin, Texas 78737
+- [ ] Circle C Ranch on Slaughter Creek	6301 W Slaughter Ln., Austin, Texas 78739
+- [ ] Grey Rock Golf Course	7401 SH 45 EB, Austin, Texas 78739
+- [ ] Hielscher Tract Greenbelt	6801 La Crosse Ave., Austin, Texas 78739
+- [ ] Southland Oaks Neighborhood Park	3505 Green Emerald Ter., Austin, Texas 78739
+- [x] Airport Commerce Pocket Park	1900 Airport Commerce, Austin, Texas 78741
+- [x] Carson Ridge Pocket Park	2405 Montopolis Dr., Austin, Texas 78741
+- [x] Carson Ridge Bark Park	2409 Montopolis Dr., Austin, Texas 78741
+- [x] Central Maintenance Complex at Town Lake Metropolitan Park	2525 S Lakeshore Blvd., Austin, Texas 78741
+- [x] Civitan Neighborhood Park	513 Vargas Rd., Austin, Texas 78741
+- [x] Country Club Creek Greenbelt	3109 Burleson Rd., Austin, Texas 78741
+- [x] Country Club Creek Greenbelt East	5907 E. Riverside Rd., Austin, Texas 78741
+- [x] Heritage Oaks Neighborhood Park	2100 Parker Ln., Austin, Texas 78741
+- [x] International Shores at Town Lake Metropolitan Park	1800 S Lakeshore Blvd., Austin, Texas 78741
+- [ ] Lakeshore at Town Lake Metropolitan Park	2200 S Lakeshore Blvd., Austin, Texas 78741
+- [x] Lawrence Street Pocket Park	1805 Lawrence St., Austin, Texas 78741
+- [x] Longhorn Shores at Town Lake Metropolitan Park	60 S Pleasant Valley Rd., Austin, Texas 78741
+- [x] Mabel Davis District Park	3427 Parker Ln., Austin, Texas 78741
+- [x] Metcalfe Pocket Park	2645 Metcalfe Rd., Austin, Texas 78741
+- [x] Montopolis Neighborhood Park	1200 Montopolis Dr., Austin, Texas 78741
+- [x] Montopolis Greenbelt	520 Bastrop SWY SB, Austin, Texas 78741
+- [x] Montopolis Practice Fields	901 Vasquez St., Austin, Texas 78741
+- [x] Peace Point at Town Lake Metropolitan Park	2200 S Lakeshore Blvd., Austin, Texas 78741
+- [x] Penick Neighborhood Park	5719 Penick Dr., Austin, Texas 78741
+- [x] Roy G. Guerrero Colorado River Metropolitan Park	400 Grove Blvd., Austin, Texas 78741
+- [x] Royal Crest Pocket Park	1400 Royal Crest Drive, Austin, Texas 78741
+- [x] Thrasher Pocket Park	6507 Riverside Dr., Austin, Texas 78741
+- [x] Woodland Pocket Park	1810 Woodland Ave., Austin, Texas 78741
+- [x] Yates Pocket Park	6015 Felix Ave., Austin, Texas 78741
+- [x] Brook Crest Neighborhood Park	5932 E. Stassney Ln. Austin, Texas 78744
+- [ ] Dove Springs District Park	5801 Ainez Dr., Austin, Texas 78744
+- [ ] Easton Park Pocket Park	8703 Final Drive. Austin, Texas 78744
+- [ ] Easton Park Greenbelt	8420 Hilock Terrace, Austin, Texas 78744
+- [ ] Houston School Park	5506 Tallow Tree Dr., Austin, Texas 78744
+- [ ] Jimmy Clay Golf Course	5400 Jimmy Clay Dr., Austin, Texas 78744
+- [ ] Kendra Page Neighborhood Park	2203 Blue Meadow Dr., Austin, Texas 78744
+- [ ] Marble Creek Greenbelt	6605 E William Cannon Dr., Austin, Texas 78744
+- [ ] Marble Creek Neighborhood Park	6704 Zequiel Dr., Austin, Texas 78744
+- [ ] Onion Creek Greenbelt	7004 Onion Creek Dr., Austin, Texas 78744
+- [ ] Onion Creek Metropolitan Park	8652 Nuckols Crossing Rd., Austin, Texas 78744
+- [ ] Onion Creek Soccer Complex	5600 E William Cannon Dr., Austin, Texas 78744
+- [ ] Pastor Edward Clarence Craig Jr. Neighborhood Park	4800 Copperbend Blvd., Austin, Texas 78744
+- [ ] Ponciana Neighborhood Park	5201 Freidrich Ln., Austin, Texas 78744
+- [ ] Roy Kizer Golf Course	5400 Jimmy Clay Dr., Austin, Texas 78744
+- [ ] Salt Springs Neighborhood Park	6401 E William Cannon Dr., Austin, Texas 78744
+- [ ] Williamson Creek East Greenbelt	4618 E William Cannon Dr., Austin, Texas 78744
+- [ ] Armadillo Neighborhood Park	910 Armadillo Rd., Austin, Texas 78745
+- [ ] Battlebend Springs Neighborhood Park	121 Sheraton Ave., Austin, Texas 78745
+- [ ] Cooper Neighborhood Park	7410 Cooper Lane, Austin, Texas 78745
+- [ ] Cunningham School Park	6213 Buffalo Pass, Austin, Texas 78745
+- [ ] Davis Hill Neighborhood Park	3402 Davis Ln., Austin, Texas 78745
+- [ ] Ellen Higgins Pocket Park	2711 Cameron Loop, Austin, Texas 78745
+- [ ] James A. Garrison District Park	6001 Menchaca Rd., Austin, Texas 78745
+- [ ] Joslin Neighborhood Park	2106 Cimarron Trl., Austin, Texas 78745
+- [ ] Longview Neighborhood Park	7609 Longview Rd., Austin, Texas 78745
+- [ ] Meadow Lea Pocket Park	126 Meadow Lea Dr., Austin, Texas 78745
+- [ ] Odom School Park	1001 Sahara Ave., Austin, Texas 78745
+- [ ] Piney Bend Neighborhood Park	8601 Piney Creek Bnd., Austin, Texas 78745
+- [ ] Pleasant Hill Creek Greenbelt	705 North Bluff Dr., Austin, Texas 78745
+- [ ] South Boggy Creek Greenbelt	7701 Circle S Rd., Austin, Texas 78745
+- [ ] St. Elmo School Park	4312 S 1st St., Austin, Texas 78745
+- [ ] Stephenson Nature Preserve and Outdoor Education Center	7501 Longview Rd., Austin, Texas 78745
+- [ ] Tahoe Trail Pocket Park	5205 Tahoe Trl., Austin, Texas 78745
+- [ ] Williamson Creek Central Greenbelt	5120 S 1st St., Austin, Texas 78745
+- [ ] Barton Creek Greenbelt	3753 S Capital of Texas Hwy., Austin, Texas 78746
+- [ ] Barton Creek Wilderness Park	3918 S Mopac Expy Svrd SB, Austin, Texas 78746
+- [ ] Gaines Park at Barton Creek Greenbelt	3918 S Mopac Expy Svrd., Austin, Texas 78746
+- [ ] Red Bud Isle	3401 Red Bud Trl., Austin, Texas 78746
+- [ ] Stratford Overlook Greenbelt	3006 Stratford Dr., Austin, Texas 78746
+- [ ] Zilker Metropolitan Park	2100 Barton Springs Rd., Austin, Texas 78746
+- [ ] Zilker Nature Preserve	301 Nature Center Dr., Austin, Texas 78746
+- [ ] Grand Meadow Neighborhood Park	8022 Thaxton Dr., Austin, Texas 78747
+- [ ] Rinard Creek Greenbelt	10625 Bradshaw Rd., Austin, Texas 78747
+- [ ] A.B. Dittmar Neighborhood Park	1009 W Dittmar Rd., Austin, Texas 78748
+- [ ] Bauerle Ranch at Slaughter Creek Greenbelt	2700 Lynnbrook Dr., Austin, Texas 78748
+- [ ] Cherry Creek Neighborhood Park	3403 Silk Oak Dr., Austin, Texas 78748
+- [ ] Mary Moore Searight Metropolitan Park	907 W Slaughter Ln., Austin, Texas 78748
+- [ ] Silk Oak Neighborhood Park	3204 Silk Oak Dr., Austin, Texas 78748
+- [ ] Slaughter Creek Greenbelt	10003 S 1st St., Austin, Texas 78748
+- [ ] Wattinger Neighborhood Park	9400 Texas Oaks Dr., Austin, Texas 78748
+- [ ] Wildcat Button Park	419 Blue Valley Dr., Austin, Texas 78748
+- [ ] Williams School Park	605 Blue Valley Dr., Austin, Texas 78748
+- [ ] Archstone Pocket Park	4308 Staggerbrush Rd., Austin, Texas 78749
+- [ ] Archstone Greenbelt	4308 Staggerbrush Rd., Austin, Texas 78749
+- [ ] Convict Hill Quarry Neighborhood Park	6511 Convict Hill Rd., Austin, Texas 78749
+- [ ] Deer Park at Maple Run Preserve	4929 Davis Ln., Austin, Texas 78749
+- [ ] Dick Nichols District Park	8011 Beckett Rd., Austin, Texas 78749
+- [ ] Goat Cave Karst Nature Preserve	3900 Deer Ln., Austin, Texas 78749
+- [ ] Hill Country View Neighborhood Park	6901 Pasture Rd., Austin, Texas 78749
+- [ ] Latta Branch Greenbelt	7910 Beckett Rd., Austin, Texas 78749
+- [ ] Legend Oaks Neighborhood Park	7724 Escarpment Blvd., Austin, Texas 78749
+- [ ] Sendera Mesa Neighborhood Park	4717 Davis Ln., Austin, Texas 78749
+- [ ] Westcreek Pocket Park	6044 Westcreek Dr., Austin, Texas 78749
+- [ ] William H. Russell Karst Nature Preserve	3705 Deer Ln., Austin, Texas, 78749
+- [ ] Williamson Creek West Greenbelt	6310 Brush Country Rd., Austin, Texas 78749
+- [ ] Canyon Vista Pool	8455 Spicewood Springs Rd., Austin, Texas 78750
+- [ ] Mountain View Neighborhood Park	8900 Westerkirk Dr., Austin, Texas 78750
+- [ ] Northwest Balcones Neighborhood Park	10225 Talleyran Dr., Austin, Texas 78750
+- [ ] Pickfair Pocket Park	10904 Pickfair Dr., Austin, Texas 78750
+- [ ] St. Edwards Greenbelt	7301 Spicewood Springs Rd., Austin, Texas 78750
+- [ ] Tanglewood Neighborhood Park	11409 Rustic Rock Dr., Austin, Texas 78750
+- [ ] Elisabet Ney Museum	304 E 44th St., Austin, Texas 78751
+- [ ] Hancock Golf Course	811 E 41st St., Austin, Texas 78751
+- [ ] Shipe Neighborhood Park	4400 Avenue G, Austin, Texas 78751
+- [ ] Triangle Commons Neighborhood Park	722 W 46th St., Austin, Texas 78751
+- [ ] Buttermilk Branch Greenbelt	7501 Bethune Ave., Austin, Texas, 78752
+- [ ] Buttermilk Neighborhood Park	7500 Blessing Ave., Austin, Texas 78752
+- [ ] Crestland Triangle	715 W Crestland Dr., Austin, Texas 78752
+- [ ] Highland Neighborhood Park	403 W St Johns Ave., Austin, Texas 78752
+- [ ] Highland Neighborhood Park and Reznicek Fields*	401 W St Johns Ave., Austin, Texas 78752
+- [ ] Highland Mall Greenbelt	6415 Airport Blvd., Austin, Texas 78752
+- [ ] Highland South Greenway	6015 Airport Blvd., Austin, Texas 78752
+- [ ] Jacob Fontaine Plaze	110 Jacob Fontaine Lane, Austin, Texas 78752
+- [ ] Meadowview Triangle	414 W Crestland Dr., Austin, Texas 78752
+- [ ] Mustang Button Park	6001 Guadalupe St., Austin, Texas 78752
+- [ ] Reilly School Park	6001 Guadalupe St., Austin, Texas 78752
+- [ ] St. John's Pocket Park	889 Wilks Ave., Austin, Texas 78752
+- [ ] T.A. Brown Neighborhood Park	520 Northway Dr., Austin, Texas 78752
+- [ ] Wilhelmina Delco Pocket Park	6102 Wilhelmina Dr., Austin, Texas 78752
+- [ ] Barrington School Park	400 Cooper Dr., Austin, Texas 78753
+- [ ] Barwood Neighborhood Park	606 Barwood Park, Austin, Texas 78753
+- [ ] Brownie Neighborhood Park	10000 Brownie Dr., Austin, Texas 78753
+- [ ] Copperfield Neighborhood Park	1425 E Yager Ln., Austin, Texas 78753
+- [ ] Georgian Acres Neighborhood Park	500 E Powell Ln., Austin, Texas 78753
+- [ ] Georgian Pocket Park	8805 Georgian Dr., Austin, Texas 78753
+- [ ] Gustavo "Gus" L. Garcia District Park	1201 E Rundberg Ln., Austin, Texas 78753
+- [ ] North Acres Greenbelt	1112 Hermitage Dr., Austin, Texas 78753
+- [ ] North Lake Neighborhood Park	9201 North Lake Creek, Austin, Texas 78753
+- [ ] North Oaks Neighborhood Park	820 Plaza Dr., Austin, Texas 78753
+- [ ] Oertli Neighborhood Park	12613 Blaine Rd., Austin, Texas 78753
+- [ ] Ruby Neighborhood Park	6900 Ryan Dr., Austin, Texas 78753
+- [ ] Upper Little Walnut Creek Greenbelt	8512 N IH35 SVRD SB., Austin, Texas 78753
+- [ ] Asian American Resource Center	8401 Cameron Rd., Austin, Texas 78754
+- [ ] Harris Branch Greenbelt	10729 Defender Tr., Austin, Texas 78754
+- [ ] Harris Branch Neighborhood Park	11200 Farmhaven Rd., Austin, Texas 78754
+- [ ] Musket Valley Neighborhood Park	11605 Bachman Dr., Austin, Texas 78754
+- [ ] Pioneer Crossing Neighborhood Park	11544 Samsung Blvd., Austin, Texas 78754
+- [ ] Walnut Bend Neighborhood Park	10321 Pioneer Farms Dr., Austin, Texas 78754
+- [ ] Ramsey Neighborhood Park	4301 Rosedale Ave., Austin, Texas 78756
+- [ ] Theckla Button Park	5613 Joe Sayers, Austin, Texas 78756
+- [ ] Woodrow Pocket Park	5809 Woodrow Ave., Austin, Texas 78756
+- [ ] Beverly S. Sheffield Northwest District Park	7000 Ardath St., Austin, Texas 78757
+- [ ] Brentwood Neighborhood Park	6710 Arroyo Seco, Austin, Texas 78757
+- [ ] Great Northern Dam Far West Off Leash Area	7001 Great Northern Blvd., Austin, Texas 78757
+- [ ] Gullett School Park	3105 Hunt Trl., Austin, Texas 78757
+- [ ] Hall/Goodnight Planting Strip	6305 Hall St., Austin, Texas 78757
+- [ ] Lucy Read School Park	7509 Silvercrest Dr., Austin, Texas 78757
+- [ ] Pillow School Park	8500 Rockwood Ln., Austin, Texas 78757
+- [ ] Ryan Planting Strip	6900 Ryan Dr., Austin, Texas 78757
+- [ ] Wooten Neighborhood Park	1500 Dale Dr., Austin, Texas 78757
+- [ ] Alderbrook Pocket Park	12444 Lamplight Village Ave., Austin, Texas 78758
+- [ ] City of Austin/YMCA North Austin Community Recreation Center	1000 W Rundberg Ln., Austin, Texas 78758
+- [ ] Cook School Park	1505 Cripple Creek Dr., Austin, Texas 78758
+- [ ] Gracywoods Neighborhood Park	12133 Metric Blvd., Austin, Texas 78758
+- [ ] Heron Hollow Pocket Park	801 Payton Gin Rd., Austin, Texas 78758
+- [ ] Jamestown Neighborhood Park	7212 Jamestown Dr., Austin, Texas 78758
+- [ ] Kennemer Pool	1031 Payton Gin Rd., Austin, Texas 78758
+- [ ] Metropolitan Pocket Park at Redline Trail	10300 Metropolitan Dr., Austin, Texas 78758
+- [ ] North Star Greenbelt	11701 Tallow Field Way, Austin, Texas 78758
+- [ ] Northern Walnut Creek Greenbelt	2611 Park Bend Rd., Austin, Texas 78758
+- [ ] Quail Creek Neighborhood Park	1101 Mearns Meadow Dr., Austin, Texas 78758
+- [ ] Ron Rigsby Pocket Park	1110 Little Elm Park, Austin, Texas 78758
+- [ ] Stonehollow Pocket Park	11604 Stonehollow Dr., Austin, Texas 78758
+- [ ] Walnut Creek Metropolitan Park	12138 N Lamar Blvd, Austin, Texas 78758
+- [ ] Wooldridge School Park	1410 Norseman Ter., Austin, Texas 78758
+- [ ] Balcones District Park	12017 Amherst Dr., Austin, Texas 78759
+- [ ] Great Hills Neighborhood Park	10801 Sierra Oaks, Austin, Texas 78759
+- [ ] Hill School Park	8405 Tallwood Dr., Austin, Texas 78759
+- [ ] Hubert C. Schroeter Neighborhood Park	11701 Big Trl., Austin, Texas 78759
+- [ ] Maggie Boatright Area at the Bull Creek Greenbelt	6958 Spicewood Springs Rd., Austin, Texas 78759
+- [ ] Oak View Neighborhood Park	10902 Oak View Dr., Austin, Texas 78759
+- [ ] Steck Valley Greenbelt	8403 Adirondack Trl., Austin, Texas 78759
+- [ ] Upper Bull Creek Greenbelt	7800 Spicewood Springs Rd., Austin, Texas 78759

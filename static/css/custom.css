@@ -1,0 +1,38 @@
+body {
+  color: steelblue;
+  background-color: honeydew;
+}
+
+a,
+button.btn {
+  color: #8da5bd;
+  transition-duration: 0.5s;
+  text-decoration: underline dotted #848d96 1px;
+}
+
+a:hover,
+button.btn:hover {
+  color: #008000;
+  transition-duration: 0.1s;
+  text-decoration: underline dotted #008000 1px;
+}
+
+.c4-izmir {
+  --primary-color: #113106;
+}
+
+.fancybox-progress {
+  background: #008000;
+}
+
+/* move the map above other content */
+.split-bio {
+  display: flex;
+  flex-direction: column;
+}
+.split-bio #mapid {
+  order: 0;
+}
+.split-bio * {
+  order: 2;
+}

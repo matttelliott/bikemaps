@@ -1,0 +1,3464 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  
+  <title>Austin Parks | Bike Maps</title>
+  <meta name="viewport" content="width=device-width,minimum-scale=1">
+  <meta name="description" content="On a quest to ride every park in Austin. Parks Directory
+Parks Map
+Ridgeline Neighborhood Park	2701 S Lakeline Blvd., Austin, Texas 78613 Dry Creek Greenbelt	6100 Constellation Cir., Austin, Texas 78617 Elroy Neighborhood Park	7527 Elroy Rd., Austin, Texas 78617 Old Moore&amp;rsquo;s Crossing Neighborhood Park	7420 Apperson St., Austin, Texas 78617 Onion Creek Wildlife Sanctuary	4435 E SH 71, Austin, Texas 78617 Stoney Ridge Neighborhood Park	7000 Moores Crossing Blvd.">
+  <meta name="generator" content="Hugo 0.123.8">
+  
+  <meta name="referrer" content="always" />
+
+  
+<link rel="stylesheet" href="https://matttelliott.com/bikemaps/vendor/bootstrap/bootstrap.min.css"/>
+
+<link rel="stylesheet" href="https://matttelliott.com/bikemaps/vendor/fancybox/jquery.fancybox.min.css"/>
+
+<link rel="stylesheet" href="https://matttelliott.com/bikemaps/vendor/leaflet/leaflet.css"/>
+
+<link rel="stylesheet" href="https://matttelliott.com/bikemaps/vendor/font-awesome/css/font-awesome.min.css"/>
+
+<link rel="stylesheet" href="https://matttelliott.com/bikemaps/vendor/leaflet.awesome-markers/leaflet.awesome-markers.css"/>
+
+<link rel="stylesheet" href="https://matttelliott.com/bikemaps/vendor/izmir/izmir.min.css"/>
+
+
+
+
+
+
+<link rel="stylesheet" href="https://matttelliott.com/bikemaps/hugo-split-gallery/main.css"/>
+
+<link rel="stylesheet" href="https://matttelliott.com/bikemaps/hugo-split-gallery/colors.css"/>
+
+
+<link rel="stylesheet" href="https://matttelliott.com/bikemaps/hugo-split-gallery/fonts.css"/>
+
+
+
+<link rel="stylesheet" href="/bikemaps/css/custom.css"/>
+
+  
+
+<script src="https://matttelliott.com/bikemaps/vendor/bootstrap/bootstrap.bundle.min.b07f093e128951e03d3d693778e70e97c53e95f65382d0570f8d6ae9c3bfb25c311870b129c5b8e4ae283c25211c6ecd301e266ca11d75598fb935eda5b09b14.js" type="text/javascript" integrity="sha512-sH8JPhKJUeA9PWk3eOcOl8U&#43;lfZTgtBXD41q6cO/slwxGHCxKcW45K4oPCUhHG7NMB4mbKEddVmPuTXtpbCbFA=="></script>
+
+
+<script src="https://matttelliott.com/bikemaps/vendor/jquery/jquery.min.f3de1813a4160f9239f4781938645e1589b876759cd50b7936dbd849a35c38ffaed53f6a61dbdd8a1cf43cf4a28aa9fffbfddeec9a3811a1bb4ee6df58652b31.js" type="text/javascript" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP&#43;u1T9qYdvdihz0PPSiiqn/&#43;/3e7Jo4EaG7TubfWGUrMQ=="></script>
+
+
+<script src="https://matttelliott.com/bikemaps/vendor/fancybox/jquery.fancybox.min.b94465f995cc06b17803019a5a611eb73addf89e7ff0d464580bc9c79b1b3d24ae39bd1b64ba9ffad3b39e239b3b4d018c76bf743ee0b9bf6808630b3d01ed40.js" type="text/javascript" integrity="sha512-uURl&#43;ZXMBrF4AwGaWmEetzrd&#43;J5/8NRkWAvJx5sbPSSuOb0bZLqf&#43;tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="></script>
+
+
+<script src="https://matttelliott.com/bikemaps/vendor/leaflet/leaflet.5d0a1832a3132bc2ef7715d81b79d9e38f213844228257ea909b3534e415e387169d4ac173c3e400e717cb6d30d2f95a5da55479aac83818625d9e55df29f1c0.js" type="text/javascript" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="></script>
+
+
+<script src="https://matttelliott.com/bikemaps/vendor/togeojson/togeojson.umd.aade7417752b39d62e4cc1c5c0d7c1e8b0fa27e6be52aee43161dac91c6302f504a37e0e5f06b60cf8adcc360f261760384970a245f9d50d0506d31f763cb3f2.js" type="text/javascript" integrity="sha512-qt50F3UrOdYuTMHFwNfB6LD6J&#43;a&#43;Uq7kMWHayRxjAvUEo34OXwa2DPitzDYPJhdgOElwokX51Q0FBtMfdjyz8g=="></script>
+
+
+<script src="https://matttelliott.com/bikemaps/vendor/leaflet.awesome-markers/leaflet.awesome-markers.min.f01a90d911f82f8b10855e35641db87d47359c67239ab4c0e8320b57f6933d8b94ce8fb005d61da747ef43be92c607f7ea9efcec25c5ed392d5a5731bbfcf23a.js" type="text/javascript" integrity="sha512-8BqQ2RH4L4sQhV41ZB24fUc1nGcjmrTA6DILV/aTPYuUzo&#43;wBdYdp0fvQ76Sxgf36p787CXF7TktWlcxu/zyOg=="></script>
+
+
+
+
+<script src="https://matttelliott.com/bikemaps/hugo-split-gallery/map.js"></script>
+
+
+
+<script src="https://matttelliott.com/bikemaps/hugo-split-gallery/fancybox.js"></script>
+<script src="https://matttelliott.com/bikemaps/hugo-split-gallery/fancybox.en.js"></script>
+
+
+<script src="/bikemaps/js/custom.js"></script>
+
+
+    
+
+  
+
+  <meta property="og:title" content="Austin Parks" />
+<meta property="og:description" content="On a quest to ride every park in Austin. Parks Directory
+Parks Map
+Ridgeline Neighborhood Park	2701 S Lakeline Blvd., Austin, Texas 78613 Dry Creek Greenbelt	6100 Constellation Cir., Austin, Texas 78617 Elroy Neighborhood Park	7527 Elroy Rd., Austin, Texas 78617 Old Moore&rsquo;s Crossing Neighborhood Park	7420 Apperson St., Austin, Texas 78617 Onion Creek Wildlife Sanctuary	4435 E SH 71, Austin, Texas 78617 Stoney Ridge Neighborhood Park	7000 Moores Crossing Blvd." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://matttelliott.com/bikemaps/parks/" /><meta property="article:section" content="" />
+<meta property="article:published_time" content="2017-07-30T00:00:00+00:00" />
+<meta property="article:modified_time" content="2017-07-30T00:00:00+00:00" />
+
+<meta itemprop="name" content="Austin Parks">
+<meta itemprop="description" content="On a quest to ride every park in Austin. Parks Directory
+Parks Map
+Ridgeline Neighborhood Park	2701 S Lakeline Blvd., Austin, Texas 78613 Dry Creek Greenbelt	6100 Constellation Cir., Austin, Texas 78617 Elroy Neighborhood Park	7527 Elroy Rd., Austin, Texas 78617 Old Moore&rsquo;s Crossing Neighborhood Park	7420 Apperson St., Austin, Texas 78617 Onion Creek Wildlife Sanctuary	4435 E SH 71, Austin, Texas 78617 Stoney Ridge Neighborhood Park	7000 Moores Crossing Blvd."><meta itemprop="datePublished" content="2017-07-30T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2017-07-30T00:00:00+00:00" />
+<meta itemprop="wordCount" content="3928">
+<meta itemprop="keywords" content="" /><meta name="twitter:title" content="Austin Parks"/>
+<meta name="twitter:description" content="On a quest to ride every park in Austin. Parks Directory
+Parks Map
+Ridgeline Neighborhood Park	2701 S Lakeline Blvd., Austin, Texas 78613 Dry Creek Greenbelt	6100 Constellation Cir., Austin, Texas 78617 Elroy Neighborhood Park	7527 Elroy Rd., Austin, Texas 78617 Old Moore&rsquo;s Crossing Neighborhood Park	7420 Apperson St., Austin, Texas 78617 Onion Creek Wildlife Sanctuary	4435 E SH 71, Austin, Texas 78617 Stoney Ridge Neighborhood Park	7000 Moores Crossing Blvd."/>
+
+  
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-6" id="content-panel">
+        <div class="container h-100">
+          <p class="lead my-0" id="site-title">          
+            <a href="/bikemaps/">
+              Bike Maps
+            </a>
+          </p>
+
+          
+          <hr/>
+
+          <h1>Austin Parks</h1>
+
+          <div class="split-bio my-2">
+            
+<h2 id="on-a-quest-to-ride-every-park-in-austin">On a quest to ride every park in Austin.</h2>
+<p><a href="https://www.austintexas.gov/page/park-directory">Parks Directory</a></p>
+<p><a href="https://www.google.com/maps/d/u/0/edit?mid=1HYXVpfPIN11s5E248iOtG0gRm6DUHMM&amp;usp=sharing">Parks Map</a></p>
+<ul>
+<li><input disabled="" type="checkbox"> Ridgeline Neighborhood Park	2701 S Lakeline Blvd., Austin, Texas 78613</li>
+<li><input disabled="" type="checkbox"> Dry Creek Greenbelt	6100 Constellation Cir., Austin, Texas 78617</li>
+<li><input disabled="" type="checkbox"> Elroy Neighborhood Park	7527 Elroy Rd., Austin, Texas 78617</li>
+<li><input disabled="" type="checkbox"> Old Moore&rsquo;s Crossing Neighborhood Park	7420 Apperson St., Austin, Texas 78617</li>
+<li><input disabled="" type="checkbox"> Onion Creek Wildlife Sanctuary	4435 E SH 71, Austin, Texas 78617</li>
+<li><input disabled="" type="checkbox"> Stoney Ridge Neighborhood Park	7000 Moores Crossing Blvd., Austin, Texas 78617</li>
+<li><input disabled="" type="checkbox"> Old San Antonio District Park	12110 Old San Antonio Rd., Austin, Texas 78652</li>
+<li><input disabled="" type="checkbox"> Wunneburger Neighborhood Park	11901 Old San Antonio Rd., Austin, Texas 78652</li>
+<li><input disabled="" type="checkbox"> Bellingham Meadows Greenbelt	7601 E Parmer Ln., Austin, Texas 78653</li>
+<li><input disabled="" type="checkbox"> Janet Long Fish Park at Harris Branch Greenbelt	13840 Dessau Rd., Austin, Texas 78660</li>
+<li><input disabled="" type="checkbox"> Lakes at Techridge Greenbelt	14303 The Lakes Blvd., Austin, Texas 78660</li>
+<li><input disabled="" type="checkbox"> Springbrook Park	1800 Picadilly Rd., Pflugerville, Texas 78664</li>
+<li><input disabled="" type="checkbox"> Austin Recreation Center	1301 Shoal Creek Blvd., Austin, Texas 78701</li>
+<li><input disabled="" type="checkbox"> Brush Square (O Henry Museum)	409 E 5th St., Austin, Texas 78701</li>
+<li><input disabled="" type="checkbox"> Duncan Neighborhood Park	900 W 9th St., Austin, Texas 78701</li>
+<li><input disabled="" type="checkbox"> Heath Eiland and Morgan Moss BMX Skate Park	1213 Shoal Creek Blvd., Austin, Texas 78701</li>
+<li><input checked="" disabled="" type="checkbox"> Margaret Hoffman Oak Park	315 W Cesar Chavez St., Austin, Texas 78701</li>
+<li><input disabled="" type="checkbox"> Old Bakery and Emporium	1006 Congress Ave., Austin, Texas 78701</li>
+<li><input disabled="" type="checkbox"> Republic Square	422 Guadalupe St., Austin, Texas 78701</li>
+<li><input checked="" disabled="" type="checkbox"> Roberta Crenshaw Overlook at Shoal Beach at Town Lake Metro Park	201 W Cesar Chavez St., Austin, Texas 78701</li>
+<li><input checked="" disabled="" type="checkbox"> Shoal Beach at Town Lake Metropolitan Park	707 W Cesar Chavez St., Austin, Texas 78701</li>
+<li><input disabled="" type="checkbox"> Sir Swante Palm Neighborhood Park	200 N IH 35 Svrd SB, Austin, Texas 78701</li>
+<li><input disabled="" type="checkbox"> Symphony Square	1101 Red River St., Austin, Texas 78701</li>
+<li><input disabled="" type="checkbox"> The War Memorial	Colorado St. and W 11 St., Austin, Texas 78701</li>
+<li><input checked="" disabled="" type="checkbox"> Waller Beach at Town Lake Metropolitan Park	30 East Ave., Austin, Texas 78701</li>
+<li><input disabled="" type="checkbox"> Waller Creek Greenbelt	703 E 6th St., Austin, Texas 78701</li>
+<li><input disabled="" type="checkbox"> Waterloo Neighborhood Park	500 E 12th St., Austin, Texas 78701</li>
+<li><input disabled="" type="checkbox"> Wooldridge Square	900 Guadalupe St., Austin, Texas 78701</li>
+<li><input disabled="" type="checkbox"> Boggy Creek Greenbelt	1114 Nile St., Austin, Texas, 78702</li>
+<li><input disabled="" type="checkbox"> Chestnut Pocket Park	2207 E 16th St., Austin, Texas 78702</li>
+<li><input disabled="" type="checkbox"> College Row Pocket Park	1901 E. 11th St., Austin, Texas 78702</li>
+<li><input checked="" disabled="" type="checkbox"> Colorado River Wildlife Sanctuary	5827 Levander Loop, Austin, Texas 78702</li>
+<li><input disabled="" type="checkbox"> Comal Pocket Park	300 Comal St., Austin, Texas 78702</li>
+<li><input disabled="" type="checkbox"> Conley-Guerrero Senior Activity Center	808 Nile St., Austin, Texas 78702</li>
+<li><input disabled="" type="checkbox"> Downs Mabson Fields	2816 E 12th St., Austin, Texas 78702</li>
+<li><input checked="" disabled="" type="checkbox"> Edward Rendon Sr. Metropolitan Park at Festival Beach	2101 Jesse E Segovia St., Austin, Texas 78702</li>
+<li><input disabled="" type="checkbox"> George Washington Carver Museum	1161 Angelina St., Austin, Texas 78702</li>
+<li><input disabled="" type="checkbox"> Guthrie Pocket Park	3424 Sellers St., Austin, Texas 78702</li>
+<li><input checked="" disabled="" type="checkbox"> Holly Shores at Town Lake Metropolitan Park	2711 Canterbury St., Austin, Texas 78702</li>
+<li><input disabled="" type="checkbox"> Kealing School Park	1500 Rosewood Ave., Austin, Texas 78702</li>
+<li><input disabled="" type="checkbox"> Lott Pocket Park	1180 Curve St., Austin, Texas 78702</li>
+<li><input disabled="" type="checkbox"> MLK Station Neighborhood Park	2907 E Martin Luther King Jr Blvd., Austin, Texas 78702</li>
+<li><input checked="" disabled="" type="checkbox"> Manuel and Robert Donley Pocket Park	2301 Haskell St., Austin, Texas 78702</li>
+<li><input checked="" disabled="" type="checkbox"> Metz Neighborhood Park	2407 Canterbury St., Austin, Texas 78702</li>
+<li><input disabled="" type="checkbox"> Millenium Center	1156 Hargrave St., Austin, Texas 78702</li>
+<li><input disabled="" type="checkbox"> Oak Springs School Park	2806 Goodwin Ave., Austin, Texas 78702</li>
+<li><input disabled="" type="checkbox"> Oakwood Annex Cemetery	1509 E MLK Jr Blvd., Austin, Texas 78702</li>
+<li><input disabled="" type="checkbox"> Oakwood Cemetery	1012 E 16th St., Austin, Texas 78702</li>
+<li><input disabled="" type="checkbox"> Pan American Neighborhood Park	307 Chicon St., Austin, Texas 78702</li>
+<li><input disabled="" type="checkbox"> Parque Zaragoza Neighborhood Park	2608 Gonzales St., Austin, Texas 78702</li>
+<li><input disabled="" type="checkbox"> Plaza Saltillo	1501 E 5th St., Austin, Texas 78702</li>
+<li><input disabled="" type="checkbox"> Poquito Creek Greenbelt	1411 1/2 Poquito St., Austin, Texas 78702</li>
+<li><input disabled="" type="checkbox"> Rosewood Neighborhood Park	2300 Rosewood Ave., Austin, Texas 78702</li>
+<li><input disabled="" type="checkbox"> Sanchez School Park	64 Waller St., Austin, Texas 78702</li>
+<li><input disabled="" type="checkbox"> Springdale Farms Greenbelt	735 Springdale Rd., Austin, Texas 78702</li>
+<li><input disabled="" type="checkbox"> Swede Hill Pocket Park	907 E 14th St., Austin, Texas 78702</li>
+<li><input checked="" disabled="" type="checkbox"> Austin High Tennis Center	1717 W Cesar Chavez St., Austin, Texas 78703</li>
+<li><input disabled="" type="checkbox"> Caldwell Treaty Oak Park	507 Baylor St., Austin, Texas 78703</li>
+<li><input checked="" disabled="" type="checkbox"> Eilers (Deep Eddy) Neighborhood Park	401 Deep Eddy Ave., Austin, Texas 78703</li>
+<li><input disabled="" type="checkbox"> Harris Triangle	2409 Windsor Rd., Austin, Texas 78703</li>
+<li><input disabled="" type="checkbox"> Hartford Planting Strip	2516 Hartford Rd., Austin, Texas 78703</li>
+<li><input disabled="" type="checkbox"> Hartford Triangle	1605 Ethridge Ave., Austin, Texas 78703</li>
+<li><input disabled="" type="checkbox"> Haskell House	1705 Waterston St., Austin, Texas 78703</li>
+<li><input disabled="" type="checkbox"> Johnson Creek Greenbelt	2001 Enfield Rd., Austin, Texas 78703</li>
+<li><input disabled="" type="checkbox"> Lions Municipal Golf Course	2901 Enfield Rd., Austin, Texas 78703</li>
+<li><input disabled="" type="checkbox"> Mary Frances Baylor Clarksville Pocket Park	1811 W 11th St., Austin, Texas 78703</li>
+<li><input disabled="" type="checkbox"> Mayfield Park	3805 W 35th St., Austin, Texas 78703</li>
+<li><input disabled="" type="checkbox"> Palma Plaza Pocket Park	1524 Palma Plz., Austin, Texas 78703</li>
+<li><input disabled="" type="checkbox"> Pease District Park	1100 Kingsbury St., Austin, Texas 78703</li>
+<li><input disabled="" type="checkbox"> Reed Neighborhood Park	2614 Pecos St., Austin, Texas 78703</li>
+<li><input disabled="" type="checkbox"> Tarrytown Neighborhood Park	2106 Tower Dr., Austin, Texas 78703</li>
+<li><input checked="" disabled="" type="checkbox"> Veterans Park	2200 Veterans Dr., Austin, Texas 78703</li>
+<li>[w] Volma Overton,Sr. at Town Lake Metropolitan Park	1200 Cesar Chavez St., Austin, Texas 78703</li>
+<li><input disabled="" type="checkbox"> Walsh Boat Landing	1600 Scenic Dr., Austin, Texas 78703</li>
+<li><input disabled="" type="checkbox"> West Austin Neighborhood Park	1317 W 10th St., Austin, Texas 78703</li>
+<li><input disabled="" type="checkbox"> Westenfield Neighborhood Park	2008 Enfield Rd., Austin, Texas 78703</li>
+<li><input disabled="" type="checkbox"> Wood Street Settlement Button Park	702 Wood Street, Austin, Texas 78703</li>
+<li><input disabled="" type="checkbox"> Auditorium Shores at Town Lake Metropolitan Park	800 W Riverside Dr., Austin, Texas 78704</li>
+<li><input checked="" disabled="" type="checkbox"> Barton Hills School Park	2009 Homedale Dr., Austin, Texas 78704</li>
+<li><input checked="" disabled="" type="checkbox"> Big Stacy Neighborhood Park	700 E Live Oak St., Austin, Texas 78704</li>
+<li><input checked="" disabled="" type="checkbox"> Blunn Creek Greenbelt	1901 East Side Dr., Austin, Texas 78704</li>
+<li><input checked="" disabled="" type="checkbox"> Blunn Creek Nature Preserve	1200 St. Edwards Dr., Austin, Texas 78704</li>
+<li><input disabled="" type="checkbox"> Butler Pitch and Putt at Town Lake Metro Park	201 Lee Barton Dr., Austin, Texas 78704</li>
+<li><input disabled="" type="checkbox"> Clawson Neighborhood Park	43701 Carson Rd., Austin, Texas, 778704</li>
+<li><input disabled="" type="checkbox"> East Bouldin Creek Greenbelt	901 Bouldin Ave., Austin, Texas 78704</li>
+<li><input checked="" disabled="" type="checkbox"> Gillis Neighborhood Park	2410 Durwood Ave., Austin, Texas 78704</li>
+<li><input checked="" disabled="" type="checkbox"> Harpers Branch Creek Greenbelt	1405 Kenwood Ave., Austin, Texas 78704</li>
+<li><input disabled="" type="checkbox"> James Pfluger Pedestrian Bridge	1300 W Riverside Dr., Austin, Texas 78704</li>
+<li><input checked="" disabled="" type="checkbox"> Kinney Oaks Pocket Park	2750 Kinney Oaks Cr., Austin, Texas 78704</li>
+<li><input checked="" disabled="" type="checkbox"> Little Stacy Neighborhood Park	1500 Alameda Dr., Austin, Texas 78704</li>
+<li><input checked="" disabled="" type="checkbox"> Little Zilker Neighborhood Park	2016 Bluebonnet Ln., Austin, Texas 78704</li>
+<li><input disabled="" type="checkbox"> Mary Dawson Pocket Park	650 Dawson Rd., Austin, Texas 78704</li>
+<li><input disabled="" type="checkbox"> Michael Butler Park at Town Lake Metro Park	1000 Barton Springs Rd. Austin, Texas 78704</li>
+<li><input disabled="" type="checkbox"> Michael Butler Shores at Town Lake Metro Park	200 S Lamar Blvd., Austin, Texas, 78704</li>
+<li><input disabled="" type="checkbox"> Nicholas Dawson Neighborhood Park	704 W James St., Austin, Texas 78704</li>
+<li><input checked="" disabled="" type="checkbox"> Norwood Tract at Town Lake Metropolitan Park	1009 Edgecliff Ter., Austin, Texas 78704</li>
+<li><input checked="" disabled="" type="checkbox"> Ricky Guerrero Neighborhood Park	2006 S 6th St., Austin, Texas 78704</li>
+<li><input checked="" disabled="" type="checkbox"> South Austin Island	2205 S Congress Ave., Austin, Texas 78704</li>
+<li><input checked="" disabled="" type="checkbox"> South Austin Neighborhood Park	1100 Cumberland Rd., Austin, Texas 78704</li>
+<li><input checked="" disabled="" type="checkbox"> South Austin Senior Activity Center	3911 Menchaca Rd., Austin, Texas 78704</li>
+<li><input checked="" disabled="" type="checkbox"> South Austin Tennis Center	1000 Cumberland Rd., Austin, Texas 78704</li>
+<li><input checked="" disabled="" type="checkbox"> The Circle Greenbelt	1300 The Circle, Austin, Texas 78704</li>
+<li><input checked="" disabled="" type="checkbox"> Tom Lasseter-South Lamar Neighborhood Park	3000 Del Curto Rd., Austin, Texas 78704</li>
+<li><input disabled="" type="checkbox"> Umlauf Sculpture Garden	605 Robert E Lee Rd., Austin, Texas 78704</li>
+<li><input disabled="" type="checkbox"> Union Pacific Greenbelt	1401 S. Lamar, Austin, Texas 78704</li>
+<li><input disabled="" type="checkbox"> Vic Mathias Shores at Town Lake Metropolitan Park	700 W Riverside Dr., Austin, Texas 78704</li>
+<li><input disabled="" type="checkbox"> West Bouldin Creek Greenbelt	1200 S 6th St., Austin, Texas 78704</li>
+<li><input disabled="" type="checkbox"> Adams-Hemphill Neighborhood Park	201 W 30th St., Austin, Texas 78705</li>
+<li><input disabled="" type="checkbox"> Bailey Neighborhood Park	1101 W 33rd St., Austin, Texas 78705</li>
+<li><input disabled="" type="checkbox"> Caswell Tennis Center	2312 Shoal Creek Blvd., Austin, Texas 78705</li>
+<li><input disabled="" type="checkbox"> Eastwoods Neighborhood Park	3001 Harris Park Ave., Austin, Texas 78705</li>
+<li><input disabled="" type="checkbox"> Lamar Senior Activity Center	2874 Shoal Crest Ave., Austin, Texas 78705</li>
+<li><input disabled="" type="checkbox"> Renaissance Market	2300 Blk of Guadalupe St., Austin, Texas 78705</li>
+<li><input disabled="" type="checkbox"> Shoal Creek Greenbelt	2600 N Lamar Blvd., Austin, Texas 78705</li>
+<li><input disabled="" type="checkbox"> Sparky Pocket Park	3701 Grooms St., Austin, Texas 78705</li>
+<li><input disabled="" type="checkbox"> Brushy Creek Greenbelt	16533 Along Creek Cv. Austin, Texas 78717</li>
+<li><input disabled="" type="checkbox"> Davis Spring Special Park	9819 Neenah Ave., Austin, Texas 78717</li>
+<li><input disabled="" type="checkbox"> Lakeline Greenbelt	9833 Northlake Creek Pkwy, Austin, Texas 78717</li>
+<li><input disabled="" type="checkbox"> Pearson Ranch Pocket Park	9407 Spectrum Drive, Austin, Texas 78717</li>
+<li><input disabled="" type="checkbox"> Astor Place Greenbelt	1716 Astor Pl., Austin, Texas 78721</li>
+<li><input disabled="" type="checkbox"> Bethany Greenbelt	1401 Waldorlf Ave., Austin, Texas 78721</li>
+<li><input disabled="" type="checkbox"> East Boggy Creek Greenbelt	5609 Stuart Cir., Austin, Texas 78721</li>
+<li><input disabled="" type="checkbox"> Evergreen Cemetery	3300 E 12th St., Austin, Texas 78721</li>
+<li><input disabled="" type="checkbox"> Fort Branch Creek Greenbelt	1143 Lott Ave., Austin, Texas 78721</li>
+<li><input disabled="" type="checkbox"> Givens District Park	3811 E 12th St., Austin, Texas 78721</li>
+<li><input disabled="" type="checkbox"> Govalle Neighborhood Park	5200 Bolm Rd., Austin, Texas 78721</li>
+<li><input disabled="" type="checkbox"> Norman-Sims School Park	3901 Tannehill Ln., Austin, Texas 78721</li>
+<li><input disabled="" type="checkbox"> Ortega School Park	5308 Chico St., Austin, Texas 78721</li>
+<li><input disabled="" type="checkbox"> Plummers Cemetery	1150 Blk of Springdale Rd., Austin, Texas 78721</li>
+<li><input disabled="" type="checkbox"> Red Bluff Nature Preserve	5607 Harold Ct., Austin, Texas 78721</li>
+<li><input disabled="" type="checkbox"> Red Bluff Neighborhood Park	5805 Harold Ct., Austin, Texas 78721</li>
+<li><input disabled="" type="checkbox"> Southern Pacific Greenbelt	1136 Shady Lane, Austin, Texas 78721</li>
+<li><input disabled="" type="checkbox"> Springdale Neighborhood Park	1175 Nickols Ave., Austin, Texas 78721</li>
+<li><input disabled="" type="checkbox"> Superstar Button Park	5306 Chico St. Austin, Texas 78721</li>
+<li><input disabled="" type="checkbox"> Alamo Pocket Park	2100 Alamo St., Austin, Texas 78722</li>
+<li><input disabled="" type="checkbox"> Burnett &ldquo;Blondie&rdquo; Pharr Tennis Center	4201 Brookview Rd. Austin, Texas 78722</li>
+<li><input disabled="" type="checkbox"> Cherrywood Pocket Park	1600 E 34th St., Austin, Texas 78722</li>
+<li><input disabled="" type="checkbox"> Grackle Green Pocket Park	2700 Drury Ln., Austin, Texas 78722</li>
+<li><input disabled="" type="checkbox"> Patterson Neighborhood Park	4200 Brookview Rd., Austin, Texas 78722</li>
+<li><input disabled="" type="checkbox"> Redline Trail Greenbelt	2900 Manor Rd., Austin, Texas 78722</li>
+<li><input disabled="" type="checkbox"> Andrews School Park	2303 Loyola Ln., Austin, Texas 78723</li>
+<li><input disabled="" type="checkbox"> Bartholomew District Park	5201 Berkman Dr., Austin, Texas 78723</li>
+<li><input disabled="" type="checkbox"> Cameron Pocket Park	5900 Cameron Rd., Austin, Texas 78723</li>
+<li><input disabled="" type="checkbox"> Dottie Jordan Neighborhood Park	2803 Loyola Ln., Austin, Texas 78723</li>
+<li><input disabled="" type="checkbox"> Earl J. Pomerleau Pocket Park	1906 Patton Ln., Austin, Texas 78723</li>
+<li><input disabled="" type="checkbox"> J.J. Seabrook Greenbelt	2000 Pershing Dr., Austin, Texas 78723</li>
+<li><input checked="" disabled="" type="checkbox"> Little Walnut Creek Greenbelt	6201 Springdale Rd., Austin, Texas 78723</li>
+<li><input disabled="" type="checkbox"> Morris Williams Golf Course	3851 Manor Rd., Austin, Texas 78723</li>
+<li><input disabled="" type="checkbox"> Pecan Springs School Park	3312 Rogge Ln., Austin, Texas 78723</li>
+<li><input checked="" disabled="" type="checkbox"> Schieffer Tract	3404 Hycreek Dr., Austin, Texas 78723</li>
+<li><input disabled="" type="checkbox"> Tannehill Branch Greenbelt	2403 E 51st St., Austin, Texas 78723</li>
+<li><input disabled="" type="checkbox"> Agave Neighborhood Park	5900 Sendero Hills Parkway</li>
+<li><input disabled="" type="checkbox"> Big Walnut Creek Nature Preserve	9221 E US 290 Hwy EB, Austin, Texas 78724</li>
+<li><input disabled="" type="checkbox"> Colony Park District Park	7201 Colony Loop Dr., Austin, Texas 78724</li>
+<li><input disabled="" type="checkbox"> Davis/White Northeast Neighborhood Park	6705 Crystalbrook Dr., Austin, Texas 78724</li>
+<li><input disabled="" type="checkbox"> Decker Tallgrass Prairie Preserve	8001 Decker Ln., Austin, Texas 78724</li>
+<li><input disabled="" type="checkbox"> Elm Creek Greenbelt	8707 HOg Eye Rd., Austin, Texas 78724</li>
+<li><input disabled="" type="checkbox"> Lake Walter E. Long Metropolitan Park	6620 Blue Bluff Rd., Austin, Texas 78724</li>
+<li><input disabled="" type="checkbox"> Lazy Creek Greenbelt	5601 Millrace Drive, Austin, Texas 78724</li>
+<li><input disabled="" type="checkbox"> Louis René Barrera Indiangrass Wildlife Sanctuary	9138 Blue Bluff Rd., Austin, Texas 78724</li>
+<li><input disabled="" type="checkbox"> Southern Walnut Creek Greenbelt	6013 Loyola Ln, Austin, Texas 78724</li>
+<li><input disabled="" type="checkbox"> Walnut Creek Sports Park	7800 Johnny Morris Rd., Austin, Texas 78724</li>
+<li><input disabled="" type="checkbox"> Walter E. Long Metropolitan Park	6620 Blue Bluff Rd., Austin, Texas 78724</li>
+<li><input disabled="" type="checkbox"> Austin&rsquo;s Colony Neighborhood Park	14501 Lippincott St. Austin, Texas 78725</li>
+<li><input disabled="" type="checkbox"> Bolm District Park	6700 Bolm Rd., Austin, Texas 78725</li>
+<li><input disabled="" type="checkbox"> Colorado River Greenbelt	7503 Shelton Rd., Austin, Texas 78725</li>
+<li><input disabled="" type="checkbox"> Colorado/Walnut Greenbelt	8001 Delwau Ln., Austin, Texas 78725</li>
+<li><input disabled="" type="checkbox"> John Trevino Jr. Metropolitan Park at Morrison Ranch	9501 FM 969 Rd., Austin, Texas 78725</li>
+<li><input disabled="" type="checkbox"> Trailhead Neighborhood Park	10984 Boulder Ln., Austin, Texas 78726</li>
+<li><input disabled="" type="checkbox"> Riata Neighborhood Park	12401 Riata Trace Pkwy., Austin, Texas 78727</li>
+<li><input disabled="" type="checkbox"> Scofield Farms Neighborhood Park	12901 Scofield Farms Dr., Austin, Texas 78727</li>
+<li><input disabled="" type="checkbox"> Silver Creek Pocket Park	13007 Silver Creek Dr., Austin, Texas 78727</li>
+<li><input disabled="" type="checkbox"> Wells Creek Greenbelt	13120 Metric Blvd., Austin, Texas 78727</li>
+<li><input disabled="" type="checkbox"> Yett Creek Neighborhood Park	12538 Riata Vista Cir., Austin, Texas 78727</li>
+<li><input disabled="" type="checkbox"> Forest North Neighborhood Park	13320 Lyndhurst St., Austin, Texas 78729</li>
+<li><input disabled="" type="checkbox"> Springwoods Neighborhood Park	9117 Anderson Mill Rd., Austin, Texas 78729</li>
+<li><input disabled="" type="checkbox"> Emma Long Metropolitan Park	1600 City Park Rd., Austin, Texas 78730</li>
+<li><input disabled="" type="checkbox"> Austin Memorial Park Cemetery	3000 Hancock Dr., Austin, Texas 78731</li>
+<li><input checked="" disabled="" type="checkbox"> Barrow Nature Preserve	7515 Step Down Cv., Austin, Texas 78731</li>
+<li><input disabled="" type="checkbox"> Bull Creek District Park	6701 Lakewood Dr., Austin, Texas 78731</li>
+<li><input disabled="" type="checkbox"> Bull Creek Bluff Neighborhood Park	6309 Spicewood Springs, Austin, Texas 78731</li>
+<li><input disabled="" type="checkbox"> Covert Park at Mount Bonnell	3800 Mount Bonnell Rd., Austin, Texas 78731</li>
+<li><input disabled="" type="checkbox"> Doss School Park	7013 Northledge Dr., Austin, Texas 78731</li>
+<li><input disabled="" type="checkbox"> Gregg Hill Park at Shoal Creek Greenbelt	4105 Jefferson St., Austin, Texas 78731</li>
+<li><input disabled="" type="checkbox"> Lower Bull Creek Greenbelt	7806 N Capital of Texas Hwy., Austin, Texas 78731</li>
+<li><input disabled="" type="checkbox"> Murchison Pool	7022 Hart Ln., Austin, Texas 78731</li>
+<li><input disabled="" type="checkbox"> North Cat Mountain Greenbelt	6801 Cat Creek Trl., Austin, Texas 78731</li>
+<li><input disabled="" type="checkbox"> Northwest Recreation Center	2913 Northland Dr., Austin, Texas 78731</li>
+<li><input disabled="" type="checkbox"> Perry Neighborhood Park	4800 Fairview Dr., Austin, Texas 78731</li>
+<li><input disabled="" type="checkbox"> Ridge Oak Triangle	4621 Lake View, Austin, Texas 78731</li>
+<li><input disabled="" type="checkbox"> Seiders Springs at Shoal Creek Greenbelt	1380 W 34th St., Austin, Texas 78731</li>
+<li><input disabled="" type="checkbox"> Shinoak Valley Greenbelt	3900 Dry Creek Dr., Austin, Texas 78731</li>
+<li><input disabled="" type="checkbox"> Stillhouse Hollow Nature Preserve	7810 Sterling Dr., Austin, Texas 78731</li>
+<li><input disabled="" type="checkbox"> Commons Ford Ranch Metropolitan Park	614 N Commons Ford Rd., Austin, Texas 78733</li>
+<li><input disabled="" type="checkbox"> Gaines Creek Neighborhood Park	4801 Republic of Texas Blvd., Austin, Texas 78735</li>
+<li><input disabled="" type="checkbox"> Gaines Greenbelt	4800 S Mopac Expy., Austin, Texas 78735</li>
+<li><input disabled="" type="checkbox"> Harper Neighborhood Park	5280 Harper Park Dr., Austin, Texas 78735</li>
+<li><input disabled="" type="checkbox"> Lantana Neighborhood Park	7206 Rialto Blvd., Austin, Texas 78735</li>
+<li><input disabled="" type="checkbox"> Oakhill Neighborhood Park	5408 Southwest Pkwy., Austin, Texas 78735</li>
+<li><input disabled="" type="checkbox"> Rialto Neighborhood Park	7025 Rialto Blvd., Austin, Texas 78735</li>
+<li><input disabled="" type="checkbox"> Vega Pocket Park	5313 Vega Ave., Ausitn, Texas 78735</li>
+<li><input disabled="" type="checkbox"> Williamson Creek Greenbelt West at Lantana	7259 Rialto Blvd., Austin, Texas 78735</li>
+<li><input disabled="" type="checkbox"> Moccasin Neighborhood Park	6700 Halesboro Dr., Austin, Texas 78736</li>
+<li><input disabled="" type="checkbox"> Scenic Brook Pocket Park	7300 Oak Meadow Drive, Austin, Texas 78736</li>
+<li><input disabled="" type="checkbox"> Lewis Mountain Ranch Neighborhood Park	8206 Lewis Mountain Dr., Austin, Texas 78737</li>
+<li><input disabled="" type="checkbox"> Circle C Ranch on Slaughter Creek	6301 W Slaughter Ln., Austin, Texas 78739</li>
+<li><input disabled="" type="checkbox"> Grey Rock Golf Course	7401 SH 45 EB, Austin, Texas 78739</li>
+<li><input disabled="" type="checkbox"> Hielscher Tract Greenbelt	6801 La Crosse Ave., Austin, Texas 78739</li>
+<li><input disabled="" type="checkbox"> Southland Oaks Neighborhood Park	3505 Green Emerald Ter., Austin, Texas 78739</li>
+<li><input checked="" disabled="" type="checkbox"> Airport Commerce Pocket Park	1900 Airport Commerce, Austin, Texas 78741</li>
+<li><input checked="" disabled="" type="checkbox"> Carson Ridge Pocket Park	2405 Montopolis Dr., Austin, Texas 78741</li>
+<li><input checked="" disabled="" type="checkbox"> Carson Ridge Bark Park	2409 Montopolis Dr., Austin, Texas 78741</li>
+<li><input checked="" disabled="" type="checkbox"> Central Maintenance Complex at Town Lake Metropolitan Park	2525 S Lakeshore Blvd., Austin, Texas 78741</li>
+<li><input checked="" disabled="" type="checkbox"> Civitan Neighborhood Park	513 Vargas Rd., Austin, Texas 78741</li>
+<li><input checked="" disabled="" type="checkbox"> Country Club Creek Greenbelt	3109 Burleson Rd., Austin, Texas 78741</li>
+<li><input checked="" disabled="" type="checkbox"> Country Club Creek Greenbelt East	5907 E. Riverside Rd., Austin, Texas 78741</li>
+<li><input checked="" disabled="" type="checkbox"> Heritage Oaks Neighborhood Park	2100 Parker Ln., Austin, Texas 78741</li>
+<li><input checked="" disabled="" type="checkbox"> International Shores at Town Lake Metropolitan Park	1800 S Lakeshore Blvd., Austin, Texas 78741</li>
+<li><input disabled="" type="checkbox"> Lakeshore at Town Lake Metropolitan Park	2200 S Lakeshore Blvd., Austin, Texas 78741</li>
+<li><input checked="" disabled="" type="checkbox"> Lawrence Street Pocket Park	1805 Lawrence St., Austin, Texas 78741</li>
+<li><input checked="" disabled="" type="checkbox"> Longhorn Shores at Town Lake Metropolitan Park	60 S Pleasant Valley Rd., Austin, Texas 78741</li>
+<li><input checked="" disabled="" type="checkbox"> Mabel Davis District Park	3427 Parker Ln., Austin, Texas 78741</li>
+<li><input checked="" disabled="" type="checkbox"> Metcalfe Pocket Park	2645 Metcalfe Rd., Austin, Texas 78741</li>
+<li><input checked="" disabled="" type="checkbox"> Montopolis Neighborhood Park	1200 Montopolis Dr., Austin, Texas 78741</li>
+<li><input checked="" disabled="" type="checkbox"> Montopolis Greenbelt	520 Bastrop SWY SB, Austin, Texas 78741</li>
+<li><input checked="" disabled="" type="checkbox"> Montopolis Practice Fields	901 Vasquez St., Austin, Texas 78741</li>
+<li><input checked="" disabled="" type="checkbox"> Peace Point at Town Lake Metropolitan Park	2200 S Lakeshore Blvd., Austin, Texas 78741</li>
+<li><input checked="" disabled="" type="checkbox"> Penick Neighborhood Park	5719 Penick Dr., Austin, Texas 78741</li>
+<li><input checked="" disabled="" type="checkbox"> Roy G. Guerrero Colorado River Metropolitan Park	400 Grove Blvd., Austin, Texas 78741</li>
+<li><input checked="" disabled="" type="checkbox"> Royal Crest Pocket Park	1400 Royal Crest Drive, Austin, Texas 78741</li>
+<li><input checked="" disabled="" type="checkbox"> Thrasher Pocket Park	6507 Riverside Dr., Austin, Texas 78741</li>
+<li><input checked="" disabled="" type="checkbox"> Woodland Pocket Park	1810 Woodland Ave., Austin, Texas 78741</li>
+<li><input checked="" disabled="" type="checkbox"> Yates Pocket Park	6015 Felix Ave., Austin, Texas 78741</li>
+<li><input checked="" disabled="" type="checkbox"> Brook Crest Neighborhood Park	5932 E. Stassney Ln. Austin, Texas 78744</li>
+<li><input disabled="" type="checkbox"> Dove Springs District Park	5801 Ainez Dr., Austin, Texas 78744</li>
+<li><input disabled="" type="checkbox"> Easton Park Pocket Park	8703 Final Drive. Austin, Texas 78744</li>
+<li><input disabled="" type="checkbox"> Easton Park Greenbelt	8420 Hilock Terrace, Austin, Texas 78744</li>
+<li><input disabled="" type="checkbox"> Houston School Park	5506 Tallow Tree Dr., Austin, Texas 78744</li>
+<li><input disabled="" type="checkbox"> Jimmy Clay Golf Course	5400 Jimmy Clay Dr., Austin, Texas 78744</li>
+<li><input disabled="" type="checkbox"> Kendra Page Neighborhood Park	2203 Blue Meadow Dr., Austin, Texas 78744</li>
+<li><input disabled="" type="checkbox"> Marble Creek Greenbelt	6605 E William Cannon Dr., Austin, Texas 78744</li>
+<li><input disabled="" type="checkbox"> Marble Creek Neighborhood Park	6704 Zequiel Dr., Austin, Texas 78744</li>
+<li><input disabled="" type="checkbox"> Onion Creek Greenbelt	7004 Onion Creek Dr., Austin, Texas 78744</li>
+<li><input disabled="" type="checkbox"> Onion Creek Metropolitan Park	8652 Nuckols Crossing Rd., Austin, Texas 78744</li>
+<li><input disabled="" type="checkbox"> Onion Creek Soccer Complex	5600 E William Cannon Dr., Austin, Texas 78744</li>
+<li><input disabled="" type="checkbox"> Pastor Edward Clarence Craig Jr. Neighborhood Park	4800 Copperbend Blvd., Austin, Texas 78744</li>
+<li><input disabled="" type="checkbox"> Ponciana Neighborhood Park	5201 Freidrich Ln., Austin, Texas 78744</li>
+<li><input disabled="" type="checkbox"> Roy Kizer Golf Course	5400 Jimmy Clay Dr., Austin, Texas 78744</li>
+<li><input disabled="" type="checkbox"> Salt Springs Neighborhood Park	6401 E William Cannon Dr., Austin, Texas 78744</li>
+<li><input disabled="" type="checkbox"> Williamson Creek East Greenbelt	4618 E William Cannon Dr., Austin, Texas 78744</li>
+<li><input disabled="" type="checkbox"> Armadillo Neighborhood Park	910 Armadillo Rd., Austin, Texas 78745</li>
+<li><input disabled="" type="checkbox"> Battlebend Springs Neighborhood Park	121 Sheraton Ave., Austin, Texas 78745</li>
+<li><input disabled="" type="checkbox"> Cooper Neighborhood Park	7410 Cooper Lane, Austin, Texas 78745</li>
+<li><input disabled="" type="checkbox"> Cunningham School Park	6213 Buffalo Pass, Austin, Texas 78745</li>
+<li><input disabled="" type="checkbox"> Davis Hill Neighborhood Park	3402 Davis Ln., Austin, Texas 78745</li>
+<li><input disabled="" type="checkbox"> Ellen Higgins Pocket Park	2711 Cameron Loop, Austin, Texas 78745</li>
+<li><input disabled="" type="checkbox"> James A. Garrison District Park	6001 Menchaca Rd., Austin, Texas 78745</li>
+<li><input disabled="" type="checkbox"> Joslin Neighborhood Park	2106 Cimarron Trl., Austin, Texas 78745</li>
+<li><input disabled="" type="checkbox"> Longview Neighborhood Park	7609 Longview Rd., Austin, Texas 78745</li>
+<li><input disabled="" type="checkbox"> Meadow Lea Pocket Park	126 Meadow Lea Dr., Austin, Texas 78745</li>
+<li><input disabled="" type="checkbox"> Odom School Park	1001 Sahara Ave., Austin, Texas 78745</li>
+<li><input disabled="" type="checkbox"> Piney Bend Neighborhood Park	8601 Piney Creek Bnd., Austin, Texas 78745</li>
+<li><input disabled="" type="checkbox"> Pleasant Hill Creek Greenbelt	705 North Bluff Dr., Austin, Texas 78745</li>
+<li><input disabled="" type="checkbox"> South Boggy Creek Greenbelt	7701 Circle S Rd., Austin, Texas 78745</li>
+<li><input disabled="" type="checkbox"> St. Elmo School Park	4312 S 1st St., Austin, Texas 78745</li>
+<li><input disabled="" type="checkbox"> Stephenson Nature Preserve and Outdoor Education Center	7501 Longview Rd., Austin, Texas 78745</li>
+<li><input disabled="" type="checkbox"> Tahoe Trail Pocket Park	5205 Tahoe Trl., Austin, Texas 78745</li>
+<li><input disabled="" type="checkbox"> Williamson Creek Central Greenbelt	5120 S 1st St., Austin, Texas 78745</li>
+<li><input disabled="" type="checkbox"> Barton Creek Greenbelt	3753 S Capital of Texas Hwy., Austin, Texas 78746</li>
+<li><input disabled="" type="checkbox"> Barton Creek Wilderness Park	3918 S Mopac Expy Svrd SB, Austin, Texas 78746</li>
+<li><input disabled="" type="checkbox"> Gaines Park at Barton Creek Greenbelt	3918 S Mopac Expy Svrd., Austin, Texas 78746</li>
+<li><input disabled="" type="checkbox"> Red Bud Isle	3401 Red Bud Trl., Austin, Texas 78746</li>
+<li><input disabled="" type="checkbox"> Stratford Overlook Greenbelt	3006 Stratford Dr., Austin, Texas 78746</li>
+<li><input disabled="" type="checkbox"> Zilker Metropolitan Park	2100 Barton Springs Rd., Austin, Texas 78746</li>
+<li><input disabled="" type="checkbox"> Zilker Nature Preserve	301 Nature Center Dr., Austin, Texas 78746</li>
+<li><input disabled="" type="checkbox"> Grand Meadow Neighborhood Park	8022 Thaxton Dr., Austin, Texas 78747</li>
+<li><input disabled="" type="checkbox"> Rinard Creek Greenbelt	10625 Bradshaw Rd., Austin, Texas 78747</li>
+<li><input disabled="" type="checkbox"> A.B. Dittmar Neighborhood Park	1009 W Dittmar Rd., Austin, Texas 78748</li>
+<li><input disabled="" type="checkbox"> Bauerle Ranch at Slaughter Creek Greenbelt	2700 Lynnbrook Dr., Austin, Texas 78748</li>
+<li><input disabled="" type="checkbox"> Cherry Creek Neighborhood Park	3403 Silk Oak Dr., Austin, Texas 78748</li>
+<li><input disabled="" type="checkbox"> Mary Moore Searight Metropolitan Park	907 W Slaughter Ln., Austin, Texas 78748</li>
+<li><input disabled="" type="checkbox"> Silk Oak Neighborhood Park	3204 Silk Oak Dr., Austin, Texas 78748</li>
+<li><input disabled="" type="checkbox"> Slaughter Creek Greenbelt	10003 S 1st St., Austin, Texas 78748</li>
+<li><input disabled="" type="checkbox"> Wattinger Neighborhood Park	9400 Texas Oaks Dr., Austin, Texas 78748</li>
+<li><input disabled="" type="checkbox"> Wildcat Button Park	419 Blue Valley Dr., Austin, Texas 78748</li>
+<li><input disabled="" type="checkbox"> Williams School Park	605 Blue Valley Dr., Austin, Texas 78748</li>
+<li><input disabled="" type="checkbox"> Archstone Pocket Park	4308 Staggerbrush Rd., Austin, Texas 78749</li>
+<li><input disabled="" type="checkbox"> Archstone Greenbelt	4308 Staggerbrush Rd., Austin, Texas 78749</li>
+<li><input disabled="" type="checkbox"> Convict Hill Quarry Neighborhood Park	6511 Convict Hill Rd., Austin, Texas 78749</li>
+<li><input disabled="" type="checkbox"> Deer Park at Maple Run Preserve	4929 Davis Ln., Austin, Texas 78749</li>
+<li><input disabled="" type="checkbox"> Dick Nichols District Park	8011 Beckett Rd., Austin, Texas 78749</li>
+<li><input disabled="" type="checkbox"> Goat Cave Karst Nature Preserve	3900 Deer Ln., Austin, Texas 78749</li>
+<li><input disabled="" type="checkbox"> Hill Country View Neighborhood Park	6901 Pasture Rd., Austin, Texas 78749</li>
+<li><input disabled="" type="checkbox"> Latta Branch Greenbelt	7910 Beckett Rd., Austin, Texas 78749</li>
+<li><input disabled="" type="checkbox"> Legend Oaks Neighborhood Park	7724 Escarpment Blvd., Austin, Texas 78749</li>
+<li><input disabled="" type="checkbox"> Sendera Mesa Neighborhood Park	4717 Davis Ln., Austin, Texas 78749</li>
+<li><input disabled="" type="checkbox"> Westcreek Pocket Park	6044 Westcreek Dr., Austin, Texas 78749</li>
+<li><input disabled="" type="checkbox"> William H. Russell Karst Nature Preserve	3705 Deer Ln., Austin, Texas, 78749</li>
+<li><input disabled="" type="checkbox"> Williamson Creek West Greenbelt	6310 Brush Country Rd., Austin, Texas 78749</li>
+<li><input disabled="" type="checkbox"> Canyon Vista Pool	8455 Spicewood Springs Rd., Austin, Texas 78750</li>
+<li><input disabled="" type="checkbox"> Mountain View Neighborhood Park	8900 Westerkirk Dr., Austin, Texas 78750</li>
+<li><input disabled="" type="checkbox"> Northwest Balcones Neighborhood Park	10225 Talleyran Dr., Austin, Texas 78750</li>
+<li><input disabled="" type="checkbox"> Pickfair Pocket Park	10904 Pickfair Dr., Austin, Texas 78750</li>
+<li><input disabled="" type="checkbox"> St. Edwards Greenbelt	7301 Spicewood Springs Rd., Austin, Texas 78750</li>
+<li><input disabled="" type="checkbox"> Tanglewood Neighborhood Park	11409 Rustic Rock Dr., Austin, Texas 78750</li>
+<li><input disabled="" type="checkbox"> Elisabet Ney Museum	304 E 44th St., Austin, Texas 78751</li>
+<li><input disabled="" type="checkbox"> Hancock Golf Course	811 E 41st St., Austin, Texas 78751</li>
+<li><input disabled="" type="checkbox"> Shipe Neighborhood Park	4400 Avenue G, Austin, Texas 78751</li>
+<li><input disabled="" type="checkbox"> Triangle Commons Neighborhood Park	722 W 46th St., Austin, Texas 78751</li>
+<li><input disabled="" type="checkbox"> Buttermilk Branch Greenbelt	7501 Bethune Ave., Austin, Texas, 78752</li>
+<li><input disabled="" type="checkbox"> Buttermilk Neighborhood Park	7500 Blessing Ave., Austin, Texas 78752</li>
+<li><input disabled="" type="checkbox"> Crestland Triangle	715 W Crestland Dr., Austin, Texas 78752</li>
+<li><input disabled="" type="checkbox"> Highland Neighborhood Park	403 W St Johns Ave., Austin, Texas 78752</li>
+<li><input disabled="" type="checkbox"> Highland Neighborhood Park and Reznicek Fields*	401 W St Johns Ave., Austin, Texas 78752</li>
+<li><input disabled="" type="checkbox"> Highland Mall Greenbelt	6415 Airport Blvd., Austin, Texas 78752</li>
+<li><input disabled="" type="checkbox"> Highland South Greenway	6015 Airport Blvd., Austin, Texas 78752</li>
+<li><input disabled="" type="checkbox"> Jacob Fontaine Plaze	110 Jacob Fontaine Lane, Austin, Texas 78752</li>
+<li><input disabled="" type="checkbox"> Meadowview Triangle	414 W Crestland Dr., Austin, Texas 78752</li>
+<li><input disabled="" type="checkbox"> Mustang Button Park	6001 Guadalupe St., Austin, Texas 78752</li>
+<li><input disabled="" type="checkbox"> Reilly School Park	6001 Guadalupe St., Austin, Texas 78752</li>
+<li><input disabled="" type="checkbox"> St. John&rsquo;s Pocket Park	889 Wilks Ave., Austin, Texas 78752</li>
+<li><input disabled="" type="checkbox"> T.A. Brown Neighborhood Park	520 Northway Dr., Austin, Texas 78752</li>
+<li><input disabled="" type="checkbox"> Wilhelmina Delco Pocket Park	6102 Wilhelmina Dr., Austin, Texas 78752</li>
+<li><input disabled="" type="checkbox"> Barrington School Park	400 Cooper Dr., Austin, Texas 78753</li>
+<li><input disabled="" type="checkbox"> Barwood Neighborhood Park	606 Barwood Park, Austin, Texas 78753</li>
+<li><input disabled="" type="checkbox"> Brownie Neighborhood Park	10000 Brownie Dr., Austin, Texas 78753</li>
+<li><input disabled="" type="checkbox"> Copperfield Neighborhood Park	1425 E Yager Ln., Austin, Texas 78753</li>
+<li><input disabled="" type="checkbox"> Georgian Acres Neighborhood Park	500 E Powell Ln., Austin, Texas 78753</li>
+<li><input disabled="" type="checkbox"> Georgian Pocket Park	8805 Georgian Dr., Austin, Texas 78753</li>
+<li><input disabled="" type="checkbox"> Gustavo &ldquo;Gus&rdquo; L. Garcia District Park	1201 E Rundberg Ln., Austin, Texas 78753</li>
+<li><input disabled="" type="checkbox"> North Acres Greenbelt	1112 Hermitage Dr., Austin, Texas 78753</li>
+<li><input disabled="" type="checkbox"> North Lake Neighborhood Park	9201 North Lake Creek, Austin, Texas 78753</li>
+<li><input disabled="" type="checkbox"> North Oaks Neighborhood Park	820 Plaza Dr., Austin, Texas 78753</li>
+<li><input disabled="" type="checkbox"> Oertli Neighborhood Park	12613 Blaine Rd., Austin, Texas 78753</li>
+<li><input disabled="" type="checkbox"> Ruby Neighborhood Park	6900 Ryan Dr., Austin, Texas 78753</li>
+<li><input disabled="" type="checkbox"> Upper Little Walnut Creek Greenbelt	8512 N IH35 SVRD SB., Austin, Texas 78753</li>
+<li><input disabled="" type="checkbox"> Asian American Resource Center	8401 Cameron Rd., Austin, Texas 78754</li>
+<li><input disabled="" type="checkbox"> Harris Branch Greenbelt	10729 Defender Tr., Austin, Texas 78754</li>
+<li><input disabled="" type="checkbox"> Harris Branch Neighborhood Park	11200 Farmhaven Rd., Austin, Texas 78754</li>
+<li><input disabled="" type="checkbox"> Musket Valley Neighborhood Park	11605 Bachman Dr., Austin, Texas 78754</li>
+<li><input disabled="" type="checkbox"> Pioneer Crossing Neighborhood Park	11544 Samsung Blvd., Austin, Texas 78754</li>
+<li><input disabled="" type="checkbox"> Walnut Bend Neighborhood Park	10321 Pioneer Farms Dr., Austin, Texas 78754</li>
+<li><input disabled="" type="checkbox"> Ramsey Neighborhood Park	4301 Rosedale Ave., Austin, Texas 78756</li>
+<li><input disabled="" type="checkbox"> Theckla Button Park	5613 Joe Sayers, Austin, Texas 78756</li>
+<li><input disabled="" type="checkbox"> Woodrow Pocket Park	5809 Woodrow Ave., Austin, Texas 78756</li>
+<li><input disabled="" type="checkbox"> Beverly S. Sheffield Northwest District Park	7000 Ardath St., Austin, Texas 78757</li>
+<li><input disabled="" type="checkbox"> Brentwood Neighborhood Park	6710 Arroyo Seco, Austin, Texas 78757</li>
+<li><input disabled="" type="checkbox"> Great Northern Dam Far West Off Leash Area	7001 Great Northern Blvd., Austin, Texas 78757</li>
+<li><input disabled="" type="checkbox"> Gullett School Park	3105 Hunt Trl., Austin, Texas 78757</li>
+<li><input disabled="" type="checkbox"> Hall/Goodnight Planting Strip	6305 Hall St., Austin, Texas 78757</li>
+<li><input disabled="" type="checkbox"> Lucy Read School Park	7509 Silvercrest Dr., Austin, Texas 78757</li>
+<li><input disabled="" type="checkbox"> Pillow School Park	8500 Rockwood Ln., Austin, Texas 78757</li>
+<li><input disabled="" type="checkbox"> Ryan Planting Strip	6900 Ryan Dr., Austin, Texas 78757</li>
+<li><input disabled="" type="checkbox"> Wooten Neighborhood Park	1500 Dale Dr., Austin, Texas 78757</li>
+<li><input disabled="" type="checkbox"> Alderbrook Pocket Park	12444 Lamplight Village Ave., Austin, Texas 78758</li>
+<li><input disabled="" type="checkbox"> City of Austin/YMCA North Austin Community Recreation Center	1000 W Rundberg Ln., Austin, Texas 78758</li>
+<li><input disabled="" type="checkbox"> Cook School Park	1505 Cripple Creek Dr., Austin, Texas 78758</li>
+<li><input disabled="" type="checkbox"> Gracywoods Neighborhood Park	12133 Metric Blvd., Austin, Texas 78758</li>
+<li><input disabled="" type="checkbox"> Heron Hollow Pocket Park	801 Payton Gin Rd., Austin, Texas 78758</li>
+<li><input disabled="" type="checkbox"> Jamestown Neighborhood Park	7212 Jamestown Dr., Austin, Texas 78758</li>
+<li><input disabled="" type="checkbox"> Kennemer Pool	1031 Payton Gin Rd., Austin, Texas 78758</li>
+<li><input disabled="" type="checkbox"> Metropolitan Pocket Park at Redline Trail	10300 Metropolitan Dr., Austin, Texas 78758</li>
+<li><input disabled="" type="checkbox"> North Star Greenbelt	11701 Tallow Field Way, Austin, Texas 78758</li>
+<li><input disabled="" type="checkbox"> Northern Walnut Creek Greenbelt	2611 Park Bend Rd., Austin, Texas 78758</li>
+<li><input disabled="" type="checkbox"> Quail Creek Neighborhood Park	1101 Mearns Meadow Dr., Austin, Texas 78758</li>
+<li><input disabled="" type="checkbox"> Ron Rigsby Pocket Park	1110 Little Elm Park, Austin, Texas 78758</li>
+<li><input disabled="" type="checkbox"> Stonehollow Pocket Park	11604 Stonehollow Dr., Austin, Texas 78758</li>
+<li><input disabled="" type="checkbox"> Walnut Creek Metropolitan Park	12138 N Lamar Blvd, Austin, Texas 78758</li>
+<li><input disabled="" type="checkbox"> Wooldridge School Park	1410 Norseman Ter., Austin, Texas 78758</li>
+<li><input disabled="" type="checkbox"> Balcones District Park	12017 Amherst Dr., Austin, Texas 78759</li>
+<li><input disabled="" type="checkbox"> Great Hills Neighborhood Park	10801 Sierra Oaks, Austin, Texas 78759</li>
+<li><input disabled="" type="checkbox"> Hill School Park	8405 Tallwood Dr., Austin, Texas 78759</li>
+<li><input disabled="" type="checkbox"> Hubert C. Schroeter Neighborhood Park	11701 Big Trl., Austin, Texas 78759</li>
+<li><input disabled="" type="checkbox"> Maggie Boatright Area at the Bull Creek Greenbelt	6958 Spicewood Springs Rd., Austin, Texas 78759</li>
+<li><input disabled="" type="checkbox"> Oak View Neighborhood Park	10902 Oak View Dr., Austin, Texas 78759</li>
+<li><input disabled="" type="checkbox"> Steck Valley Greenbelt	8403 Adirondack Trl., Austin, Texas 78759</li>
+<li><input disabled="" type="checkbox"> Upper Bull Creek Greenbelt	7800 Spicewood Springs Rd., Austin, Texas 78759</li>
+</ul>
+
+
+
+
+
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+
+
+  
+  
+  
+
+  <div id="mapid" style="width: 100%; height: 50vh;" class="mb-1"></div>
+  
+  
+  
+  <script>
+    $(document).ready(function() {
+      initMap();
+      var tracks = [];
+      var markers = [];
+
+      
+
+      
+        
+          
+            markers.push([
+              L.latLng( 30.249608333333335 ,  -97.73716666666667 ),
+               0 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.251013888888888 ,  -97.74672777777778 ),
+               1 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.247666666666667 ,  -97.7441861111111 ),
+               2 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.23961388888889 ,  -97.74713888888888 ),
+               3 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.24302777777778 ,  -97.74604722222222 ),
+               4 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.241433333333333 ,  -97.75239444444445 ),
+               5 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.233455555555558 ,  -97.74845833333333 ),
+               6 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.240738888888888 ,  -97.75843055555555 ),
+               7 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.24095277777778 ,  -97.76862222222222 ),
+               8 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.24043888888889 ,  -97.76719722222222 ),
+               9 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.239966666666668 ,  -97.76608333333333 ),
+               10 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.247219444444447 ,  -97.764275 ),
+               11 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.22027222222222 ,  -97.74256111111112 ),
+               12 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.221080555555552 ,  -97.73199444444445 ),
+               13 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.221080555555552 ,  -97.73195 ),
+               14 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.22723333333333 ,  -97.73758055555555 ),
+               15 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.233783333333335 ,  -97.73614444444445 ),
+               16 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.237658333333336 ,  -97.7312388888889 ),
+               17 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.241163888888888 ,  -97.72955277777778 ),
+               18 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.245083333333334 ,  -97.72918611111112 ),
+               19 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.24557777777778 ,  -97.72647222222223 ),
+               20 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.242955555555557 ,  -97.71827777777779 ),
+               21 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.244594444444445 ,  -97.7165138888889 ),
+               22 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.251405555555557 ,  -97.71411944444445 ),
+               23 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.250916666666665 ,  -97.71861944444444 ),
+               24 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.250919444444445 ,  -97.71856666666667 ),
+               25 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.252680555555557 ,  -97.71817777777778 ),
+               26 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.250758333333334 ,  -97.72145 ),
+               27 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.250625 ,  -97.73013333333334 ),
+               28 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.251858333333335 ,  -97.7342388888889 ),
+               29 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.257319444444445 ,  -97.73989166666667 ),
+               30 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.257344444444445 ,  -97.739875 ),
+               31 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.25805 ,  -97.73971666666667 ),
+               32 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.258025 ,  -97.73980833333333 ),
+               33 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.258866666666666 ,  -97.74092222222222 ),
+               34 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.260958333333335 ,  -97.74262222222222 ),
+               35 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.26094722222222 ,  -97.74263055555555 ),
+               36 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.263330555555555 ,  -97.74595555555555 ),
+               37 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.26332777777778 ,  -97.7459638888889 ),
+               38 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.264075 ,  -97.74753611111112 ),
+               39 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.2648 ,  -97.75181666666667 ),
+               40 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.26481111111111 ,  -97.75182222222222 ),
+               41 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.267027777777777 ,  -97.75735555555555 ),
+               42 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.271377777777776 ,  -97.76456388888889 ),
+               43 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.274583333333332 ,  -97.76959166666667 ),
+               44 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.275888888888886 ,  -97.77155277777777 ),
+               45 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.275755555555556 ,  -97.77179722222222 ),
+               46 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.246394444444444 ,  -97.72068888888889 ),
+               47 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.23943888888889 ,  -97.70040833333334 ),
+               48 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.237536111111112 ,  -97.70073611111111 ),
+               49 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.22771111111111 ,  -97.70884722222222 ),
+               50 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.225966666666665 ,  -97.70618333333334 ),
+               51 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.225966666666665 ,  -97.70617777777778 ),
+               52 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.219877777777775 ,  -97.70633611111111 ),
+               53 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.217663888888886 ,  -97.70577222222222 ),
+               54 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.219730555555554 ,  -97.70449166666667 ),
+               55 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.241908333333335 ,  -97.77830555555555 ),
+               56 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.234297222222224 ,  -97.78540833333334 ),
+               57 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.251458333333332 ,  -97.77437499999999 ),
+               58 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.256533333333334 ,  -97.78330277777778 ),
+               59 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.255358333333334 ,  -97.783975 ),
+               60 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.25035 ,  -97.73624444444445 ),
+               61 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.250344444444444 ,  -97.73623611111111 ),
+               62 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.25033888888889 ,  -97.73623611111111 ),
+               63 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.25033888888889 ,  -97.73623611111111 ),
+               64 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.26545 ,  -97.75582777777778 ),
+               65 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.265458333333335 ,  -97.75582222222222 ),
+               66 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.265466666666665 ,  -97.75582777777778 ),
+               67 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.265458333333335 ,  -97.75582222222222 ),
+               68 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.242655555555558 ,  -97.71658333333333 ),
+               69 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.231363888888886 ,  -97.70656666666667 ),
+               70 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.23137222222222 ,  -97.70656666666667 ),
+               71 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.225416666666664 ,  -97.70569722222223 ),
+               72 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.225416666666664 ,  -97.70567222222222 ),
+               73 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.223975 ,  -97.70137777777778 ),
+               74 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.223574999999997 ,  -97.69813611111111 ),
+               75 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.221613888888886 ,  -97.6914888888889 ),
+               76 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.231352777777776 ,  -97.69961666666667 ),
+               77 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.231355555555552 ,  -97.6996 ),
+               78 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.23176111111111 ,  -97.70074444444445 ),
+               79 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.23281944444444 ,  -97.69229166666668 ),
+               80 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.233547222222224 ,  -97.69278055555556 ),
+               81 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.237061111111114 ,  -97.6913 ),
+               82 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.23705277777778 ,  -97.69130833333334 ),
+               83 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.236647222222224 ,  -97.68743888888889 ),
+               84 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.247958333333333 ,  -97.69175833333334 ),
+               85 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.247977777777777 ,  -97.69178055555555 ),
+               86 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.247600000000002 ,  -97.69213055555556 ),
+               87 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.246372222222224 ,  -97.69194722222223 ),
+               88 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.307875 ,  -97.67083055555555 ),
+               89 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.304425000000002 ,  -97.67064722222223 ),
+               90 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.292494444444447 ,  -97.66827500000001 ),
+               91 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.29208888888889 ,  -97.6644888888889 ),
+               92 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.20076388888889 ,  -97.75426388888889 ),
+               93 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.197894444444444 ,  -97.73984444444444 ),
+               94 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.195166666666665 ,  -97.72861388888889 ),
+               95 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.195980555555554 ,  -97.75444722222223 ),
+               96 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 30.195991666666668 ,  -97.75444722222223 ),
+               97 ,
+            ]);
+          
+        
+      
+
+      add(tracks, markers);
+      finalizeMap();
+    });
+  </script>
+
+
+
+          </div>
+          <div class="split-lists my-4">
+            <div class="row">
+              
+<div class="col">
+  <ul class="list-unstyled" id="list-metadata">
+    <li><i class="fa fa-file fa-fw"></i>Article published on 2017-07-30</li>
+    
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+    
+      <li><i class="fa fa-camera fa-fw"></i>Photos taken on 2024-02-11, 2024-02-12, 2024-02-15, 2024-02-16, 2024-02-19, 2024-02-20, 2024-02-22, 2024-02-24, 2024-03-14, 2024-03-30, 2024-04-13</li>
+    
+
+    
+    
+      
+      
+      
+      
+    
+      
+      
+      
+      
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+            </div>
+          </div>
+
+          
+          
+            <hr>
+            <div class="split-footnote my-2">
+              
+              https://matttelliott.com
+            </div>
+            
+          
+
+          <hr>
+          <div class="split-credit mt-4">
+            <p><small> Bike Maps  -
+                Powered by <a href="https://gohugo.io/">hugo</a> and <a href="https://gitlab.com/tmuguet/hugo-split-gallery">Hugo Split Gallery theme</a> (inspired by <a href="https://github.com/tmuguet/hugo-split-theme">Hugo Split Theme</a> and <a href="https://onepagelove.com/split">Split Template</a> by <a href="https://onepagelove.com">One Page Love</a>) </small></p>
+
+            
+          </div>
+        </div>
+      </div>
+
+      
+
+
+
+
+
+
+
+<div class="col-lg-6 p-0" id="gallery-panel" style="background-image: url('false');">
+  <div class="container-fluid h-100 p-0">
+    <div class="row h-100 p-0">
+      <div class="col my-auto p-0">
+        <ul class="split-grid list-unstyled">
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8621.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8621.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8621_hud272c5663e08e32cc7745c88e226ec75_1139418_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8621_hud272c5663e08e32cc7745c88e226ec75_1139418_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8620.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8620.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8620_hu05d09a53db256709f51d5eb97a310243_1296841_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8620_hu05d09a53db256709f51d5eb97a310243_1296841_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8622.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8622.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8622_hu10bfed78505669bee45079381e42e608_964299_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8622_hu10bfed78505669bee45079381e42e608_964299_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8624.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8624.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8624_hu1afeaa5581d9a48ce66c076235586c32_978848_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8624_hu1afeaa5581d9a48ce66c076235586c32_978848_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8625.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8625.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8625_hu08c978fd92efd96c15d5bc8017e50850_1133489_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8625_hu08c978fd92efd96c15d5bc8017e50850_1133489_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8626.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8626.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8626_huc62529f97a1d2369c67e2a6dfeb22298_635731_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8626_huc62529f97a1d2369c67e2a6dfeb22298_635731_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8629.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8629.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8629_hue38dbdf1d878a05bcdde98ee1a9b72d3_1247667_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8629_hue38dbdf1d878a05bcdde98ee1a9b72d3_1247667_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8631.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8631.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8631_hu2f091810444e8d5b40b75e2302aeff0b_1361195_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8631_hu2f091810444e8d5b40b75e2302aeff0b_1361195_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8630.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8630.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8630_huc28eb6c8f1c56713a230cea95d4ceaa3_1288708_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8630_huc28eb6c8f1c56713a230cea95d4ceaa3_1288708_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8647.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8647.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8647_hu8533aa10c166460b9c2332f48cd67f26_1446244_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8647_hu8533aa10c166460b9c2332f48cd67f26_1446244_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8632.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8632.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8632_hu99a9e66f0dcb312283785f33fa95564c_650334_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8632_hu99a9e66f0dcb312283785f33fa95564c_650334_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8633.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8633.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8633_hu4f6b5de3121b8e3325710073b7d87d9e_649054_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8633_hu4f6b5de3121b8e3325710073b7d87d9e_649054_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8648.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8648.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8648_hu8c0fe3d8843a584f83ee185624b5ab19_1418426_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8648_hu8c0fe3d8843a584f83ee185624b5ab19_1418426_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8634.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8634.jpeg 1536w, https://matttelliott.com/bikemaps/parks/images/IMG_8634_hufcf1996e35ddbfa9fb3764b497fa36cc_1024144_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8634_hufcf1996e35ddbfa9fb3764b497fa36cc_1024144_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8649.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8649.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8649_hua65555507b43f3e0008d59bd4e89bc39_1071396_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8649_hua65555507b43f3e0008d59bd4e89bc39_1071396_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8650.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8650.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8650_hu8f2cbfcafd7c885d30b5f04e04bdcfe9_1136735_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8650_hu8f2cbfcafd7c885d30b5f04e04bdcfe9_1136735_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8651.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8651.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8651_hu3c99723fb607df86c86d7571d84c84f5_1295373_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8651_hu3c99723fb607df86c86d7571d84c84f5_1295373_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8652.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8652.jpeg 1536w, https://matttelliott.com/bikemaps/parks/images/IMG_8652_hu5c7779b55f8b002fa075a824715f4c17_1485681_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8652_hu5c7779b55f8b002fa075a824715f4c17_1485681_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8653.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8653.jpeg 1536w, https://matttelliott.com/bikemaps/parks/images/IMG_8653_hua5cd463463341e94f8125145d078f8de_1015304_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8653_hua5cd463463341e94f8125145d078f8de_1015304_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8655.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8655.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8655_hua2589002df650224a10279eb97b81abc_1284878_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8655_hua2589002df650224a10279eb97b81abc_1284878_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8657.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8657.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8657_hu2d0da94846f3355ea13e08c343f877e0_1265907_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8657_hu2d0da94846f3355ea13e08c343f877e0_1265907_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8656.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8656.jpeg 1536w, https://matttelliott.com/bikemaps/parks/images/IMG_8656_hu176fe6978ad0d35de7a99219f01ff9ef_945552_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8656_hu176fe6978ad0d35de7a99219f01ff9ef_945552_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8658.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8658.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8658_hub7c2ea2bd2d91e33c8d7414f0007da99_1615583_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8658_hub7c2ea2bd2d91e33c8d7414f0007da99_1615583_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8659.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8659.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8659_hub48b0d3e6c3e096e68a12b9b6180e775_1517725_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8659_hub48b0d3e6c3e096e68a12b9b6180e775_1517725_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8660.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8660.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8660_hu654bce0205a221917dd5947db921b9b5_1484868_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8660_hu654bce0205a221917dd5947db921b9b5_1484868_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8662.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8662.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8662_huf141fd6223a3e41a87de97d975cf6c6f_930334_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8662_huf141fd6223a3e41a87de97d975cf6c6f_930334_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8664.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8664.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8664_huc305a2ef38ac76c795735c354e6c7eda_1378899_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8664_huc305a2ef38ac76c795735c354e6c7eda_1378899_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8663.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8663.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8663_hub60b74ddbf8bc0f3041482fe283482f6_1769272_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8663_hub60b74ddbf8bc0f3041482fe283482f6_1769272_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8665.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8665.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8665_hu11a825333149db434ee90ab5603ae457_1054731_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8665_hu11a825333149db434ee90ab5603ae457_1054731_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8667.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8667.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8667_huec04cfca004c9934c696d5b8793f2fe0_1293641_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8667_huec04cfca004c9934c696d5b8793f2fe0_1293641_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8666.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8666.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8666_hu873715289b36775d3b9f61c50ec34fcc_1497908_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8666_hu873715289b36775d3b9f61c50ec34fcc_1497908_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8668.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8668.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8668_hua78bfbb9e73255fb63d5a87c001935f2_1280782_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8668_hua78bfbb9e73255fb63d5a87c001935f2_1280782_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8669.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8669.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8669_hu0ada6ec2925c631e5e4ecbad5b502915_801083_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8669_hu0ada6ec2925c631e5e4ecbad5b502915_801083_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8671.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8671.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8671_hu21e2d2084e3c114ea58fea6f309be598_945511_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8671_hu21e2d2084e3c114ea58fea6f309be598_945511_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8670.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8670.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8670_hu43ed5a7c55bfb4762079bc1f10311e1d_1654038_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8670_hu43ed5a7c55bfb4762079bc1f10311e1d_1654038_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8672.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8672.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8672_hucccf4618d36be26e573ed7f68273b513_1465126_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8672_hucccf4618d36be26e573ed7f68273b513_1465126_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8673.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8673.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8673_hu42b820ba276ef759b67626a3b1dca2c0_1474019_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8673_hu42b820ba276ef759b67626a3b1dca2c0_1474019_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8674.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8674.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8674_hue4cab25d7dc8497436eb6e452614b398_1176266_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8674_hue4cab25d7dc8497436eb6e452614b398_1176266_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8675.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8675.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8675_hu29e96620a482ab54263b50fa110a85ce_1260077_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8675_hu29e96620a482ab54263b50fa110a85ce_1260077_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8677.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8677.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8677_hue98bab445ff60fd70c0ebf56d475cc28_1399476_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8677_hue98bab445ff60fd70c0ebf56d475cc28_1399476_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8676.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8676.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8676_hua461fea7404f267b53c51472fa7c3aee_1714775_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8676_hua461fea7404f267b53c51472fa7c3aee_1714775_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8678.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8678.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8678_hu05474777828e536ae97995a13b6c223e_1824960_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8678_hu05474777828e536ae97995a13b6c223e_1824960_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8680.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8680.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8680_hucccf565a1c1c3381524e20183b8b2309_1282284_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8680_hucccf565a1c1c3381524e20183b8b2309_1282284_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8679.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8679.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8679_hud490a94d35285fd9041bc8337ba44996_1250332_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8679_hud490a94d35285fd9041bc8337ba44996_1250332_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8681.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8681.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8681_hu8178db809be7cd9678ae618e9361ed63_1521318_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8681_hu8178db809be7cd9678ae618e9361ed63_1521318_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8682.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8682.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8682_hu291b8465d2e4509f3741141ee1ed834f_1224482_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8682_hu291b8465d2e4509f3741141ee1ed834f_1224482_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8703.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8703.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8703_huf8177d986d6b8ccbc184a0348cae2ed5_1044558_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8703_huf8177d986d6b8ccbc184a0348cae2ed5_1044558_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8704.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8704.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8704_hu337323724ee03053539a62a084c313a5_1260688_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8704_hu337323724ee03053539a62a084c313a5_1260688_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8683.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8683.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8683_hube5a20cadfeb8354d41a8ba83587e956_1637783_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8683_hube5a20cadfeb8354d41a8ba83587e956_1637783_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8705.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8705.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8705_hu71d42b0748b14b7dcfbd53805f35400e_1486904_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8705_hu71d42b0748b14b7dcfbd53805f35400e_1486904_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8707.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8707.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8707_hu44c4d7e3c7143ce52c8759bbb89bc833_1393773_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8707_hu44c4d7e3c7143ce52c8759bbb89bc833_1393773_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8708.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8708.jpeg 1536w, https://matttelliott.com/bikemaps/parks/images/IMG_8708_hu9a61660640901ef2b5a172e5d6ac2a84_1053109_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8708_hu9a61660640901ef2b5a172e5d6ac2a84_1053109_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8709.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8709.jpeg 1536w, https://matttelliott.com/bikemaps/parks/images/IMG_8709_hu6ad2fe7721f51f6f8e4b107293d23ea4_1387974_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8709_hu6ad2fe7721f51f6f8e4b107293d23ea4_1387974_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8710.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8710.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8710_hue4e3bd468e3ee66e57a1cfeed31b751d_1230820_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8710_hue4e3bd468e3ee66e57a1cfeed31b751d_1230820_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8711.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8711.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8711_hu5b1c2dc3e9c3f7f4ef24b657f88c4235_1558470_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8711_hu5b1c2dc3e9c3f7f4ef24b657f88c4235_1558470_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8712.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8712.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8712_hu3f99a47fa0c2ba4336b74d275d047943_1391271_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8712_hu3f99a47fa0c2ba4336b74d275d047943_1391271_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8726.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8726.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8726_hub77eb38ac922f6a223e74d99ca56bf74_1494995_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8726_hub77eb38ac922f6a223e74d99ca56bf74_1494995_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8727.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8727.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8727_hu90f07f6b84dcb3f656efdac4de534e78_1132705_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8727_hu90f07f6b84dcb3f656efdac4de534e78_1132705_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8728.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8728.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8728_hu62cef2870f718245612381527074816d_1210226_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8728_hu62cef2870f718245612381527074816d_1210226_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8729.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8729.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8729_huecd3efdc511a75b64db2454c93cb0093_1589889_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8729_huecd3efdc511a75b64db2454c93cb0093_1589889_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8730.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8730.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8730_hu3b36da4cb0b3adac6e457bd985563a31_1085935_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8730_hu3b36da4cb0b3adac6e457bd985563a31_1085935_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8739.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8739.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8739_hu19833f8facdce19bf98724dc1128aaf4_592366_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8739_hu19833f8facdce19bf98724dc1128aaf4_592366_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8740.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8740.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8740_hu72b40d929ffddbe049e9e27fcab75b06_592269_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8740_hu72b40d929ffddbe049e9e27fcab75b06_592269_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8741.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8741.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8741_hu5aafd255bd82a3babd801f20bfcdd47a_800396_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8741_hu5aafd255bd82a3babd801f20bfcdd47a_800396_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8742.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8742.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8742_hu65f97bf7844c53d2b20eeaca81f7f33c_826493_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8742_hu65f97bf7844c53d2b20eeaca81f7f33c_826493_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8743.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8743.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8743_hu3c277985e7636aa7325b9c49149b6403_1085441_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8743_hu3c277985e7636aa7325b9c49149b6403_1085441_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8744.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8744.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8744_hu0d8349a3569938df04bef592ba600ace_1125358_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8744_hu0d8349a3569938df04bef592ba600ace_1125358_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8745.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8745.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8745_hu2b70af50d9b14719f48fac21af81d5d7_964455_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8745_hu2b70af50d9b14719f48fac21af81d5d7_964455_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8746.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8746.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8746_huc1c842380f27bb6a2cb1ed67bfe48318_659254_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8746_huc1c842380f27bb6a2cb1ed67bfe48318_659254_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8934.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8934.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8934_hu63fdf4ad6560a1772beda6726e20f8d1_1409614_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8934_hu63fdf4ad6560a1772beda6726e20f8d1_1409614_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8935.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8935.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8935_hu50fb4abfb1fb5c69532b236df8589854_974085_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8935_hu50fb4abfb1fb5c69532b236df8589854_974085_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8936.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8936.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8936_hu6dfe20db0893820ff6948ee85202789a_1031284_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8936_hu6dfe20db0893820ff6948ee85202789a_1031284_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8937.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8937.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8937_hud4f410a01f55e5699f60668c338677b5_1066312_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8937_hud4f410a01f55e5699f60668c338677b5_1066312_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8938.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8938.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8938_huc7a6ad2b1f2d9593648dca91e0e8deac_1192365_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8938_huc7a6ad2b1f2d9593648dca91e0e8deac_1192365_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8939.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8939.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8939_hu0e73d0608f366a3b77045c1e3c9fcd2b_1203738_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8939_hu0e73d0608f366a3b77045c1e3c9fcd2b_1203738_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8940.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8940.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8940_hu7c8478439d7dbf271800326da914f40e_1225697_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8940_hu7c8478439d7dbf271800326da914f40e_1225697_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8941.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8941.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8941_hu83f53d637709a15238e558db65c67cb1_1106184_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8941_hu83f53d637709a15238e558db65c67cb1_1106184_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8942.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8942.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8942_hu9d812c332fc8044169d77febc8b7d846_963104_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8942_hu9d812c332fc8044169d77febc8b7d846_963104_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8943.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8943.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8943_hub3ea23a988c9676d47c3af5e7f3754d7_1264065_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8943_hub3ea23a988c9676d47c3af5e7f3754d7_1264065_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8944.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8944.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8944_hu45ad7b1c1253ab1f6ef5e6a5e6545227_1008056_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8944_hu45ad7b1c1253ab1f6ef5e6a5e6545227_1008056_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8945.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8945.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8945_hud78ad6a24c294be11ee6e8ab50467f1c_1405191_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8945_hud78ad6a24c294be11ee6e8ab50467f1c_1405191_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8946.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8946.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8946_hu27412cfb82fb82b136fa9dde4365f2c8_1666253_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8946_hu27412cfb82fb82b136fa9dde4365f2c8_1666253_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8948.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8948.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8948_hubc95d823d02ca03e45bd2f2b5b21fb8c_1644623_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8948_hubc95d823d02ca03e45bd2f2b5b21fb8c_1644623_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8949.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8949.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8949_hua5ca9200926b1f0f063684ac5830a219_1764387_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8949_hua5ca9200926b1f0f063684ac5830a219_1764387_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8950.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8950.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8950_hu55e60d6ab9a0915e33e4c7b366986144_1640626_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8950_hu55e60d6ab9a0915e33e4c7b366986144_1640626_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8951.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8951.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8951_hu20e708dd5911148d4e781c50cf463fb8_1111137_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8951_hu20e708dd5911148d4e781c50cf463fb8_1111137_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8952.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8952.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8952_hu0afa62563d036a4750c8a4d3683f16d9_1153094_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8952_hu0afa62563d036a4750c8a4d3683f16d9_1153094_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8953.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8953.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8953_hu4d622b877f4aae3c95a524583937bb9b_1492334_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8953_hu4d622b877f4aae3c95a524583937bb9b_1492334_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_8954.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_8954.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_8954_hu331ad5422b742f99826d011542e8020e_1515403_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_8954_hu331ad5422b742f99826d011542e8020e_1515403_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_9034.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_9034.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_9034_hub84ae82906db6a8bfc4cd2cfa230d752_1293479_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_9034_hub84ae82906db6a8bfc4cd2cfa230d752_1293479_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_9035.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_9035.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_9035_hu95fb4263fce66f2842cf4654c936f9b4_1400445_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_9035_hu95fb4263fce66f2842cf4654c936f9b4_1400445_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_9037.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_9037.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_9037_huf20051439d25d42a856d0ab3006e9d0a_1260724_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_9037_huf20051439d25d42a856d0ab3006e9d0a_1260724_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_9038.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_9038.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_9038_hud5c19555dc5f0cb1e81439493b6a621b_1104849_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_9038_hud5c19555dc5f0cb1e81439493b6a621b_1104849_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_9117.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_9117.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_9117_hudd4d91af0a2379a50a6b8e5ae44b505f_1652674_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_9117_hudd4d91af0a2379a50a6b8e5ae44b505f_1652674_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_9118.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_9118.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_9118_hu42d1fb680fdb6b9dc3a1bb42a7cc948a_1513664_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_9118_hu42d1fb680fdb6b9dc3a1bb42a7cc948a_1513664_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_9119.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_9119.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_9119_hu7433f130dbafd19d6522a8e13aae178f_1656690_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_9119_hu7433f130dbafd19d6522a8e13aae178f_1656690_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_9120.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_9120.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_9120_hu91416ed0a4ec75432606c5fd96975a71_1829268_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_9120_hu91416ed0a4ec75432606c5fd96975a71_1829268_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+            
+            
+            
+              <li><a href="https://matttelliott.com/bikemaps/parks/images/IMG_9121.jpeg"
+                  data-srcset="https://matttelliott.com/bikemaps/parks/images/IMG_9121.jpeg 2048w, https://matttelliott.com/bikemaps/parks/images/IMG_9121_hu5f0a414a3955e6d7bdbe0ee39ff4a251_1840407_2000x0_resize_q75_box.jpeg 2000w"
+                  data-fancybox="gallery"><img src="https://matttelliott.com/bikemaps/parks/images/IMG_9121_hu5f0a414a3955e6d7bdbe0ee39ff4a251_1840407_0x150_resize_q75_box.jpeg" /></a></li>
+            
+          
+        <li></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </div>
+</body>
+
+</html>
