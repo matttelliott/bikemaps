@@ -9,4 +9,4 @@ publishDir = 'docs/'
   customCss = ["css/custom.css"]
   customJs = ["js/custom.js"]
 
-footnote = "https://matttelliott.com"
+footnote = '<a href="https://matttelliott.com">matttelliott.com</a>'
